@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.dark {
+	background: #232121;
+	color: #fff;
+}
+
+.dark p {
+	color: rgb(209, 213, 219);
+}
+
+button:hover {
+	background-color: #1fc6c6;
+	color: #fff;
+}
+
+.light {
+	background: #fff;
+	color: #000;
+}
+
+p {
+	color: rgba(73, 87, 116, 0.797);
+}
+
+span {
+	color: #1fc6c6;
+}
+
+li:hover {
+	color: #1fc6c6;
+}
+
+.navbar-dark {
+	background: #1f1c1c;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.navbar-light {
+	background: #fff;
+	color: #000;
+}
