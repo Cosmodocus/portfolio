@@ -71,7 +71,12 @@ const Projects = () => {
 							</Link>
 						</button>
 						<button className='border-4 rounded-full py-2 px-4'>
-							Live Demo
+							<a
+								href='https://reztech-pokedex.netlify.app/'
+								target='_blank'
+							>
+								Live Demo
+							</a>
 						</button>
 					</div>
 				</div>
