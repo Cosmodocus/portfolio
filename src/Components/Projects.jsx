@@ -3,6 +3,7 @@ import Finance from '../assets/finance.png';
 import Pokedex from '../assets/Pokedex.png';
 import Netflix from '../assets/netflix.png';
 import Youtube from '../assets/youtube.png';
+import Sushi from '../assets/kaiyo-sushi.png';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -12,6 +13,79 @@ const Projects = () => {
 			<h1 className='text-4xl font-bold pb-8 '>Featured Projects</h1>
 			<div className='grid md:grid-cols-2 grid-cols-1 gap-16'>
 				{/* PROJECT 1 */}
+				<div className=' mx-2 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
+					<img
+						className='border-4 rounded-lg w-[400px] h-[200px]'
+						src={Pokedex}
+						alt=''
+					/>
+					<h2 className='text-2xl font-bold'>National Pokedex</h2>
+					<p className=' text-lg '>
+						A national pokedex that contains data and stats of 1008 Pokemon
+					</p>
+					<div>
+						<h3 className='text-lg font-semibold'>Technologies Used:</h3>
+						<p>HTML, CSS, JavaScript, PokeAPI</p>
+					</div>
+					<div className='flex gap-2'>
+						<button className='border-4 rounded-full py-2 px-4'>
+							<Link
+								className='flex items-center gap-2'
+								to={'https://github.com/Cosmodocus/national-pokedex'}
+								target='_blank'
+							>
+								<FaGithub size={25} />
+								GitHub
+							</Link>
+						</button>
+						<button className='border-4 rounded-full py-2 px-4'>
+							<a
+								href='https://reztech-pokedex.netlify.app/'
+								target='_blank'
+							>
+								Live Demo
+							</a>
+						</button>
+					</div>
+				</div>
+
+				{/* PROJECT 2 */}
+				<div className=' mx-2 flex flex-col items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
+					<img
+						className='border-4 rounded-lg w-[400px] h-[200px]'
+						src={Sushi}
+						alt=''
+					/>
+					<h2 className='text-2xl font-bold'>Sushi Website</h2>
+					<p className=' text-lg '>
+						A website to explore a Sushi restaurant's menus, orders, and FAQ's
+					</p>
+					<div>
+						<h3 className='text-lg font-semibold'>Technologies Used:</h3>
+						<p> React, React-Router, Tailwind CSS</p>
+					</div>
+					<div className='flex gap-2'>
+						<button className='border-4 rounded-full py-2 px-4'>
+							<Link
+								className='flex items-center gap-2'
+								to={'https://github.com/Cosmodocus/kaiyo-sushi-website'}
+								target='_blank'
+							>
+								<FaGithub size={25} />
+								GitHub
+							</Link>
+						</button>
+						<button className='border-4 rounded-full py-2 px-4'>
+							<a
+								href='https://reztech-kaiyo-sushi.netlify.app/'
+								target='_blank'
+							>
+								Live Demo
+							</a>
+						</button>
+					</div>
+				</div>
+				{/* PROJECT 3 */}
 				<div className='mx-2 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[200px]'
@@ -49,44 +123,9 @@ const Projects = () => {
 						</button>
 					</div>
 				</div>
-				{/* PROJECT 2 */}
-				<div className=' mx-2 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
-					<img
-						className='border-4 rounded-lg w-[400px] h-[200px]'
-						src={Pokedex}
-						alt=''
-					/>
-					<h2 className='text-2xl font-bold'>National Pokedex</h2>
-					<p className=' text-lg '>
-						A national pokedex that contains data and stats of 1008 Pokemon
-					</p>
-					<div>
-						<h3 className='text-lg font-semibold'>Technologies Used:</h3>
-						<p>HTML, CSS, JavaScript, PokeAPI</p>
-					</div>
-					<div className='flex gap-2'>
-						<button className='border-4 rounded-full py-2 px-4'>
-							<Link
-								className='flex items-center gap-2'
-								to={'https://github.com/Cosmodocus/national-pokedex'}
-								target='_blank'
-							>
-								<FaGithub size={25} />
-								GitHub
-							</Link>
-						</button>
-						<button className='border-4 rounded-full py-2 px-4'>
-							<a
-								href='https://reztech-pokedex.netlify.app/'
-								target='_blank'
-							>
-								Live Demo
-							</a>
-						</button>
-					</div>
-				</div>
-				{/* PROJECT 3 */}
-				<div className=' md:md-0 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
+
+				{/* PROJECT 4 */}
+				<div className='mx-2 md:md-0 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[200px]'
 						src={Netflix}
@@ -116,7 +155,7 @@ const Projects = () => {
 						</button>
 					</div>
 				</div>
-				{/* PROJECT 4 */}
+				{/* PROJECT 5 */}
 				<div className=' mx-2 flex flex-col items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[200px]'
