@@ -125,37 +125,7 @@ const Projects = () => {
 				</div>
 
 				{/* PROJECT 4 */}
-				<div className='mx-2 md:md-0 flex flex-col  items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
-					<img
-						className='border-4 rounded-lg w-[400px] h-[200px]'
-						src={Netflix}
-						alt=''
-					/>
-					<h2 className='text-2xl font-bold'>Netflix Clone</h2>
-					<p className=' text-lg '>
-						A replica of the popular Netflix streaming website
-					</p>
-					<div>
-						<h3 className='text-lg font-semibold'>Technologies Used:</h3>
-						<p> React, Tailwind CSS, Firebase, Axios, TMDB API</p>
-					</div>
-					<div className='flex gap-2'>
-						<button className='border-4 rounded-full py-2 px-4'>
-							<Link
-								className='flex items-center gap-2'
-								to={'https://github.com/Cosmodocus/netflix-clone'}
-								target='_blank'
-							>
-								<FaGithub size={25} />
-								GitHub
-							</Link>
-						</button>
-						<button className='border-4 rounded-full py-2 px-4'>
-							Live Demo
-						</button>
-					</div>
-				</div>
-				{/* PROJECT 5 */}
+
 				<div className=' mx-2 flex flex-col items-center text-center gap-2 border rounded-lg p-8 shadow-md'>
 					<img
 						className='border-4 rounded-lg w-[400px] h-[200px]'
