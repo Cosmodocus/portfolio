@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { ReactTyped } from 'react-typed';
 
 const Hero = () => {
@@ -11,17 +11,18 @@ const Hero = () => {
 				<p className='md:text-3xl text-xl '>
 					I'm a passionate{' '}
 					<span className='font-semibold text-[#1fc6c6] '>Frontend </span>
-					Developer dedicated to crafting exceptional web applications
+					Engineer dedicated to crafting exceptional web applications
 				</p>
 				<div className='text-center flex items-center justify-center md:gap-4 gap-2'>
 					<button className='md:text-xl text-lg border-4 rounded-full  px-4 py-2'>
 						<Link
-							to={
-								'https://docs.google.com/document/d/13v86c8Wn7Y8JiitiOhFZMZwuk_x2XIxzzF5pmCv7Fow/edit?usp=sharing'
-							}
+							to={'https://www.linkedin.com/in/reza-homayuni-0503861b6/'}
 							target='_blank'
+							className='flex items-center gap-2'
 						>
-							CV Resume
+							{' '}
+							<FaLinkedin size={30} />
+							My LinkedIn
 						</Link>
 					</button>
 					<button className='md:text-xl text-lg border-4 rounded-full  px-4 py-2'>
@@ -31,7 +32,7 @@ const Hero = () => {
 							className='flex items-center gap-2'
 						>
 							<FaGithub size={30} />
-							Github
+							My Github
 						</Link>
 					</button>
 				</div>
