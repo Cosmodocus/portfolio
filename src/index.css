@@ -16,6 +16,16 @@ body {
 .dark p {
 	color: rgb(209, 213, 219);
 }
+.disabled {
+	cursor: not-allowed;
+	background-color: #9ca3af; /* Light gray background */
+	color: #e5e7eb; /* Darker gray text color */
+}
+
+.disabled:hover {
+	background-color: #e5e7eb; /* Light gray background */
+	color: #9ca3af; /* Darker gray text color */
+}
 
 button:hover {
 	background-color: #1fc6c6;

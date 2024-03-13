@@ -149,8 +149,8 @@ const Projects = () => {
 								GitHub
 							</Link>
 						</button>
-						<button className=' border-4 rounded-full py-2 px-4'>
-							Live Demo
+						<button className=' flex flex-col border-4 rounded-full py-2 px-4 class="bg-gray-500 text-gray-300 cursor-not-allowed shadow-sm hover:none'>
+							<span className='text-gray-300 '>Unavailible</span>
 						</button>
 					</div>
 				</div>
