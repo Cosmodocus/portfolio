@@ -18,13 +18,13 @@ body {
 }
 .disabled {
 	cursor: not-allowed;
-	background-color: #9ca3af; /* Light gray background */
-	color: #e5e7eb; /* Darker gray text color */
+	background-color: #9ca3af;
+	color: #e5e7eb;
 }
 
 .disabled:hover {
-	background-color: #e5e7eb; /* Light gray background */
-	color: #9ca3af; /* Darker gray text color */
+	background-color: #e5e7eb;
+	color: #9ca3af;
 }
 
 button:hover {
