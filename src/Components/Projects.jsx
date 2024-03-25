@@ -31,7 +31,7 @@ const Projects = () => {
 						technologies:
 							'React, TypeScript, Tailwind CSS, Node, Express, CleanURI API',
 						githubLink: 'https://github.com/Cosmodocus/ziplinkz',
-						liveDemoLink: '#', // Replace '#' with the actual live demo link when available
+						liveDemoLink: 'https://reztech-ziplinkz.netlify.app/',
 					},
 					{
 						image: Sushi,
