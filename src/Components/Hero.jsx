@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { ReactTyped } from 'react-typed';
+import RobotHead from '../assets/robot-head.png';
 
 const Hero = () => {
 	return (
-		<div className='w-full flex py-[300px]  items-center justify-center'>
-			<div className='flex flex-col gap-4 text-center'>
+		<div className='w-full flex py-[200px]  items-center justify-center'>
+			<div className='flex flex-col gap-4 text-center items-center'>
+				<img
+					src={RobotHead}
+					alt=''
+					className='w-40 md:w-64 '
+				/>
 				<h1 className='md:text-8xl text-4xl'>Welcome to my Portfolio</h1>
 				<p className='md:text-3xl text-xl '>
 					I'm a passionate{' '}
