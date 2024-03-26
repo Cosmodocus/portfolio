@@ -46,7 +46,7 @@ const Projects = () => {
 						image: Youtube,
 						title: 'Youtube Clone',
 						description: 'A functional Youtube Clone website',
-						technologies: 'CSS, Youtube Data API V3',
+						technologies: 'React, React-Router, CSS, Youtube Data API V3',
 						githubLink: 'https://github.com/Cosmodocus/youtube-clone',
 						liveDemoLink: '#',
 					},

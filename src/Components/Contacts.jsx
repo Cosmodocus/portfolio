@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
-import { FaGithub, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaPhoneAlt, FaTwitter } from 'react-icons/fa'; // Import FaTwitter
 import { Link } from 'react-router-dom';
 
 const Contacts = () => {
@@ -19,7 +19,7 @@ const Contacts = () => {
 					<FaPhoneAlt size={25} />
 					(647)-535-4495
 				</li>
-				<li className='md:text-2xl  '>
+				<li className='md:text-2xl '>
 					<Link
 						to={'https://www.linkedin.com/in/reza-homayuni-0503861b6/'}
 						target='_blank'
@@ -36,6 +36,16 @@ const Contacts = () => {
 						target='_blank'
 					>
 						<FaGithub size={30} /> https://github.com/Cosmodocus
+					</Link>
+				</li>
+				{/* Add Twitter link */}
+				<li className='md:text-2xl '>
+					<Link
+						className='flex items-center gap-2'
+						to={'https://twitter.com/Rez_Technology'} // Replace with your Twitter link
+						target='_blank'
+					>
+						<FaTwitter size={30} /> https://twitter.com/Rez_Technology
 					</Link>
 				</li>
 			</ul>
