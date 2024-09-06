@@ -1,43 +1,32 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import RobotHead from '../assets/robot-head.png';
+import { FaFolderOpen } from 'react-icons/fa';
+import ProfilePic from '../assets/profile.jpg';
 
 const Hero = () => {
 	return (
-		<div className='w-full flex py-[200px]  items-center justify-center'>
-			<div className='flex flex-col gap-4 text-center items-center'>
+		<div className='w-full min-h-screen flex items-center justify-center'>
+			<div className='flex flex-col gap-6 text-center items-center'>
 				<img
-					src={RobotHead}
-					alt=''
-					className='w-40 md:w-64 '
+					src={ProfilePic}
+					alt='Profile'
+					className='w-40 md:w-64 rounded-full border-4 0'
 				/>
-				<h1 className='md:text-8xl text-4xl'>Welcome to my Portfolio</h1>
-				<p className='md:text-3xl text-xl '>
-					I'm a passionate{' '}
-					<span className='font-semibold text-[#1fc6c6] '>Frontend </span>
-					Engineer dedicated to crafting exceptional web applications
+				<h1 className='text-4xl md:text-6xl font-bold '>
+					Frontend & Fullstack Developer
+				</h1>
+				<p className='text-xl md:text-2xl '>
+					My name is Reza and I&apos;m a developer based in Canada with expertise in developing{' '}
+					<span className='font-semibold text-coral'>Frontend & Fullstack</span>
+					{' '}web applications.
 				</p>
-				<div className='text-center flex items-center justify-center md:gap-4 gap-2'>
-					<button className='md:text-xl text-lg border-4 rounded-full  px-4 py-2'>
+				<div className='flex items-center justify-center gap-4'>
+					<button className='md:text-xl text-lg border-4 rounded-full px-4 py-2'>
 						<Link
-							to={'https://www.linkedin.com/in/reza-homayuni-0503861b6/'}
-							target='_blank'
+							to={'/details'}
 							className='flex items-center gap-2'
 						>
-							{' '}
-							<FaLinkedin size={30} />
-							My LinkedIn
-						</Link>
-					</button>
-					<button className='md:text-xl text-lg border-4 rounded-full  px-4 py-2'>
-						<Link
-							to={'https://github.com/Cosmodocus'}
-							target='_blank'
-							className='flex items-center gap-2'
-						>
-							<FaGithub size={30} />
-							My Github
+							<FaFolderOpen />
+							Check out my Projects!
 						</Link>
 					</button>
 				</div>

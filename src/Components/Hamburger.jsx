@@ -38,6 +38,14 @@ const Hamburger = () => {
 							</li>
 							<li className='font-semibold'>
 								<Link
+									to='/testimonials'
+									onClick={toggleNavbar}
+								>
+									Testimonials
+								</Link>
+							</li>
+							<li className='font-semibold'>
+								<Link
 									to='/contacts'
 									onClick={toggleNavbar}
 								>

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const Contacts = () => {
 	return (
 		<div className='w-full flex flex-col items-center text-center justify-center h-screen gap-8 py-[300px]'>
-			<h1 className='md:text-8xl text-4xl'>Let's Work Together</h1>
-			<p className='md:text-3xl  text-xl text-center md:leading-[42px] md:w-[1200px] '>
+			<h1 className='md:text-8xl text-4xl mt-20'>Let's Work Together</h1>
+			<p className='md:text-3xl  text-xl text-center md:leading-[42px] md:w-[1200px] mx-2 '>
 				Have a project in mind or just want to say hello? I'd love to hear from
 				you! Feel free to reach out to me using the contact information below:
 			</p>

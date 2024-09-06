@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DarkLightBtn from './DarkLightBtn';
 import Hamburger from './Hamburger';
@@ -27,8 +27,12 @@ const Navbar = () => {
 					<Link to='/details'>Projects</Link>
 				</li>
 				<li className='font-semibold'>
+					<Link to='/testimonials'>Testimonials</Link>
+				</li>
+				<li className='font-semibold'>
 					<Link to='/contacts'>Contact</Link>
 				</li>
+
 			</ul>
 			<DarkLightBtn className='md:flex hidden' />
 			<Hamburger />
