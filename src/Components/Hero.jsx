@@ -11,7 +11,7 @@ const Hero = () => {
 					alt='Profile'
 					className='w-40 md:w-64 rounded-full border-4 0'
 				/>
-				<h1 className='text-4xl md:text-6xl font-bold '>
+				<h1 className='text-3xl md:text-6xl font-bold '>
 					Frontend & Fullstack Developer
 				</h1>
 				<p className='text-xl md:text-2xl '>

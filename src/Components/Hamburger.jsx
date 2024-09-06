@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { CgMenuGridR } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import DarkLightBtn from './DarkLightBtn';
