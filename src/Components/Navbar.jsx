@@ -20,16 +20,16 @@ const Navbar = () => {
 		>
 			<h1 className='text-3xl font-bold text-[#1fc6c6]'>RezTech</h1>
 			<ul className=' gap-8 md:flex hidden'>
-				<li className='font-semibold'>
+				<li >
 					<Link to='/'>Home</Link>
 				</li>
-				<li className='font-semibold'>
+				<li >
 					<Link to='/details'>Projects</Link>
 				</li>
-				<li className='font-semibold'>
+				<li >
 					<Link to='/testimonials'>Testimonials</Link>
 				</li>
-				<li className='font-semibold'>
+				<li >
 					<Link to='/contacts'>Contact</Link>
 				</li>
 
