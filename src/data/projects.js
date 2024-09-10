@@ -23,10 +23,11 @@ export const projects = [
   },
   {
     image: Lounge,
-    title: "Lounge(Work-in-progress)",
+    title: "Lounge",
     description: "A Personalized Hub app for all your daily routine needs such as news, weather, ai tools, productivity tools, and more.",
     githubLink: "https://github.com/Cosmodocus/ziplinkz",
     liveDemoLink: "https://reztech-ziplinkz.netlify.app/",
+    comingSoon: true,
     skills: [skills.react, skills.typescript, skills.mui, skills.nodejs, skills.firebase],
   },
   {
