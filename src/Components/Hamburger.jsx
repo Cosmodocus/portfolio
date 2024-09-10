@@ -10,6 +10,12 @@ const Hamburger = () => {
 		setNavbar(!navbar);
 	};
 
+	const handleOutsideClick = (e) => {
+		if (e.target.classList.contains('overlay')) {
+			setNavbar(false);
+		}
+	};
+
 	return (
 		<div className='cursor-pointer md:hidden flex relative'>
 			<CgMenuGridR
@@ -17,7 +23,10 @@ const Hamburger = () => {
 				onClick={toggleNavbar}
 			/>
 			{navbar && (
-				<div className='fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-75 '>
+				<div
+					className='overlay fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-75 '
+					onClick={handleOutsideClick}
+				>
 					<div className='bg-white text-[#000] text-center w-[300px] gap-4 shadow-md rounded-md p-8 flex flex-col items-center  z-10'>
 						<ul className='flex flex-col gap-4'>
 							<li className='font-semibold'>
