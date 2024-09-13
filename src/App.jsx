@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
+import About from './Pages/About';
 import Details from './Pages/Details';
 import CTA from './Pages/CTA';
 import Footer from './Components/Footer';
@@ -15,6 +16,8 @@ const App = () => {
 					path='/'
 					Component={Home}
 				/>
+				<Route path='/about'
+					Component={About} />
 				<Route
 					path='/details'
 					Component={Details}

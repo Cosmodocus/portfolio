@@ -12,12 +12,10 @@ const Hero = () => {
 					className='w-40 md:w-64 rounded-full border-4 0'
 				/>
 				<h1 className='text-3xl md:text-6xl font-bold '>
-					Frontend & Fullstack Developer
+					Welcome to my Portfolio!
 				</h1>
 				<p className='text-xl md:text-2xl '>
-					My name is Reza and I&apos;m a developer based in Canada with expertise in developing{' '}
-					<span className='font-semibold text-coral'>Frontend & Fullstack</span>
-					{' '}web applications.
+					My name is Reza Homayuni and I&apos;m a <span className='font-semibold text-coral'>Frontend/Fullstack</span>  developer based in Canada
 				</p>
 				<div className='flex items-center justify-center gap-4'>
 					<button className='md:text-xl text-lg border-4 rounded-full px-4 py-2'>

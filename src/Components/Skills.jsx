@@ -1,24 +1,37 @@
 import { skills } from "../constants";
 
-const Skills = () => {
-  return (
-    <div className='container flex flex-col items-center mx-auto px-4 py-32'>
-      <h1 className='text-4xl font-bold mb-8 text-center'>My Skills</h1>
+const categories = [
+  { title: "Frontend", items: ["html", "css", "javascript", "typescript", "react", "nextjs", "redux", "tailwind", "mui"] },
+  { title: "Backend", items: ["nodejs", "firebase", "postgresql"] },
+  { title: "Tools & Platforms", items: ["vscode", "git", "github", "aws"] },
+  { title: "Testing", items: ["jest", "postman", "playwright"] },
+];
 
-      <div className='flex gap-8'>
-        <div className='border border-gray-200 rounded-lg p-6 shadow-lg'>
-          <div className='flex flex-wrap justify-center items-center'>
-            {Object.entries(skills).map(([key, src]) => (
-              <div key={key} className='flex flex-col items-center mx-4 my-2'>
-                <img src={src} alt={key} className='w-16 h-16' />
-                <span className='text-sm mt-2 uppercase'>{key}</span>
+const TechStack = () => {
+  return (
+    <div className='grid grid-cols-1 gap-8'>
+      {categories.map((category) => (
+        <div key={category.title}>
+          <h3 className='text-2xl font-semibold mb-4 text-blue-600'>{category.title}</h3>
+          <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6'>
+            {category.items.map((item) => (
+              <div
+                key={item}
+                className='flex flex-col items-center justify-center p-4 border-2 border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl'
+              >
+                <img
+                  src={skills[item]}
+                  alt={item}
+                  className='w-16 h-16 mb-2 transition-opacity duration-300 ease-in-out hover:opacity-80'
+                />
+                <span className='text-sm font-medium text-center capitalize'>{item}</span>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };
 
-export default Skills;
+export default TechStack;

@@ -24,11 +24,11 @@ const TestimonialCard = ({ testimonial }) => {
             {isExpanded ? text : (text.length > 150 ? `${text.substring(0, 150)}...` : text)}
           </p>
           {text.length > 150 && (
-            <button
+            <a
               onClick={handleToggle}
-              className="text-blue-500 hover:underline">
+              className="text-blue-500 cursor-pointer hover:underline">
               {isExpanded ? 'Show less' : 'Read more'}
-            </button>
+            </a>
           )}
         </div>
       </div>

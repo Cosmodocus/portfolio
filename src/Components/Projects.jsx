@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center py-16 px-2">
+    <div className="w-full flex flex-col items-center justify-center container mx-auto px-4 py-32">
       <h1 className="text-4xl font-bold pb-8">Featured Projects</h1>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
         {projects.map((project, index) => (
@@ -23,13 +22,13 @@ const Projects = () => {
               </h2>
               <div className="flex flex-wrap gap-2 mt-2">
                 {project.mainFocus && (
-                  <span className="text-sm bg-blue-500 text-white font-semibold px-2 py-1 rounded-lg">
-                    Main Focus
+                  <span className="text-sm bg-[#1fc6c6] text-white font-semibold px-2 py-1 rounded-lg">
+                    Current Project
                   </span>
                 )}
                 {project.comingSoon && (
-                  <span className="text-sm bg-yellow-300 text-black font-semibold px-2 py-1 rounded-lg">
-                    Coming Soon
+                  <span className="text-sm text-black bg-yellow-300  font-semibold px-2 py-1 rounded-lg">
+                    Coming Soon!
                   </span>
                 )}
               </div>
@@ -51,39 +50,38 @@ const Projects = () => {
             <div className="flex justify-start mt-2 gap-2">
               <button
                 className={`border-2 rounded-full py-2 px-4 ${
-                  project.comingSoon ? "cursor-not-allowed opacity-50" : ""
+                  project.comingSoon && "cursor-not-allowed opacity-50"
                 }`}
                 disabled={project.comingSoon}
               >
-                <Link
+                <a
                   className={`flex items-center gap-2 ${
                     project.comingSoon && "text-gray-500"
                   }`}
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-disabled={project.comingSoon}
                 >
                   <FaGithub size={20} />
                   GitHub
-                </Link>
+                </a>
               </button>
               <button
                 className={`border-2 rounded-full py-2 px-4 ${
-                  project.comingSoon ? "cursor-not-allowed opacity-50" : ""
+                  project.comingSoon && "cursor-not-allowed opacity-50"
                 }`}
                 disabled={project.comingSoon}
               >
                 {project.comingSoon ? (
                   "Live Demo"
                 ) : (
-                  <Link
+                  <a
                     href={project.liveDemoLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Live Demo
-                  </Link>
+                  </a>
                 )}
               </button>
             </div>

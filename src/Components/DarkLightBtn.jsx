@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { LuLightbulb, LuLightbulbOff } from 'react-icons/lu';
 
 const DarkLightBtn = ({ className }) => {
