@@ -3,7 +3,7 @@ import { skills } from "../constants";
 const Skills = () => {
   return (
     <div className='container flex flex-col items-center mx-auto px-4 py-32'>
-      <h1 className='text-4xl font-bold mb-8 text-center'>Skills</h1>
+      <h1 className='text-4xl font-bold mb-8 text-center'>My Skills</h1>
 
       <div className='flex gap-8'>
         <div className='border border-gray-200 rounded-lg p-6 shadow-lg'>

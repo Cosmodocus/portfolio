@@ -27,8 +27,6 @@ export const projects = [
     image: Inventory,
     title: "Inventory Management Dashboard",
     description: "A dashboard for checking and managing your inventory such as products, users, and more.",
-    githubLink: "https://github.com/Cosmodocus/ziplinkz",
-    liveDemoLink: "https://reztech-ziplinkz.netlify.app/",
     comingSoon: true,
     skills: [skills.nextjs, skills.react, skills.redux, skills.typescript, skills.mui, skills.nodejs, skills.postgresql, skills.aws],
   },

@@ -14,8 +14,8 @@ const Navbar = () => {
 		<nav
 			className={
 				isDarkMode
-					? 'navbar-dark w-full flex justify-between px-8 items-center py-4  text-text shadow-md fixed'
-					: 'navbar-light w-full flex justify-between px-8 items-center py-4 text-text shadow-md fixed'
+					? 'navbar-dark w-full flex justify-between px-8 items-center py-4  text-text shadow-md fixed z-10'
+					: 'navbar-light w-full flex justify-between px-8 items-center py-4 text-text shadow-md fixed z-10'
 			}
 		>
 			<h1 className='text-3xl font-bold text-[#1fc6c6]'>RezTech</h1>
