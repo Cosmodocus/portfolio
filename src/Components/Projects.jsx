@@ -1,15 +1,26 @@
+import { motion } from 'framer-motion';
 import { projects } from "../data/projects";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
+  // Define animation variants
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
   return (
     <div className="w-full flex flex-col items-center justify-center container mx-auto px-4 py-32">
       <h1 className="text-4xl font-bold pb-8">Featured Projects</h1>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
         {projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
             className="mx-2 flex flex-col items-start text-left gap-4 border rounded-lg p-4 shadow-md"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.6, delay: index * 0.1 }}
           >
             <img
               className="border-4 rounded-lg w-full h-auto object-cover"
@@ -85,7 +96,7 @@ const Projects = () => {
                 )}
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

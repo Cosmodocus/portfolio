@@ -26,7 +26,7 @@ const TestimonialCard = ({ testimonial }) => {
           {text.length > 150 && (
             <a
               onClick={handleToggle}
-              className="text-blue-500 cursor-pointer hover:underline">
+              className="text-blue-500 hover:underline">
               {isExpanded ? 'Show less' : 'Read more'}
             </a>
           )}

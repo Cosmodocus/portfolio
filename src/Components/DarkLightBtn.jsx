@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import { LuLightbulb, LuLightbulbOff } from 'react-icons/lu';
+import PropTypes from 'prop-types';
 
 const DarkLightBtn = ({ className }) => {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -35,6 +36,10 @@ const DarkLightBtn = ({ className }) => {
 			</button>
 		</div>
 	);
+};
+
+DarkLightBtn.propTypes = {
+	className: PropTypes.string.isRequired,
 };
 
 export default DarkLightBtn;
