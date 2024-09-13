@@ -11,7 +11,7 @@ const Skills = () => {
             {Object.entries(skills).map(([key, src]) => (
               <div key={key} className='flex flex-col items-center mx-4 my-2'>
                 <img src={src} alt={key} className='w-16 h-16' />
-                <span className='text-sm mt-2 capitalize'>{key}</span>
+                <span className='text-sm mt-2 uppercase'>{key}</span>
               </div>
             ))}
           </div>

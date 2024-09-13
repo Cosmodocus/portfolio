@@ -3,7 +3,7 @@ import Pokedex from "../assets/Pokedex.png";
 import ZipLinkz from "../assets/Ziplinkz.png";
 import Sushi from "../assets/kaiyo-sushi.png";
 import MarvelAI from "../assets/Marvel-ToolPage.png";
-import Lounge from "../assets/Lounge.png";
+import Inventory from "../assets/inventory.png";
 import {skills} from "../constants";
 export const projects = [
   {
@@ -16,19 +16,21 @@ export const projects = [
     skills: [
       skills.nextjs,
       skills.react,
+      skills.redux,
       skills.mui,
       skills.nodejs,
       skills.firebase,
     ],
+    mainFocus: true,
   },
   {
-    image: Lounge,
-    title: "Lounge",
-    description: "A Personalized Hub app for all your daily routine needs such as news, weather, ai tools, productivity tools, and more.",
+    image: Inventory,
+    title: "Inventory Management Dashboard",
+    description: "A dashboard for checking and managing your inventory such as products, users, and more.",
     githubLink: "https://github.com/Cosmodocus/ziplinkz",
     liveDemoLink: "https://reztech-ziplinkz.netlify.app/",
     comingSoon: true,
-    skills: [skills.react, skills.typescript, skills.mui, skills.nodejs, skills.firebase],
+    skills: [skills.nextjs, skills.react, skills.redux, skills.typescript, skills.mui, skills.nodejs, skills.postgresql, skills.aws],
   },
   {
     image: ZipLinkz,

@@ -13,22 +13,31 @@ const Projects = () => {
             className='mx-2 flex flex-col items-start text-left gap-4 border rounded-lg p-4 shadow-md'
           >
             <img
-              className='border-4 rounded-lg w-80% align-center h-auto object-cover'
+              className='border-4 rounded-lg w-full align-center h-auto object-cover'
               src={project.image}
               alt={project.title}
             />
-            <h2 className='md:text-4xl text-2xl font-bold mt-4'>
-              {project.title}
-              {project.comingSoon && (
-                <span className="text-sm bg-yellow-300 text-black font-semibold ml-2 px-2 py-1 rounded-lg">
-                  Coming Soon
-                </span>
-              )}
-            </h2>
+            <div className='flex flex-col items-start'>
+              <h2 className='md:text-4xl text-2xl font-bold mt-4'>
+                {project.title}
+              </h2>
+              <div className='flex gap-2 mt-2'>
+                {project.mainFocus && (
+                  <span className="text-sm bg-blue-500 text-white font-semibold px-2 py-1 rounded-lg">
+                    Main Focus
+                  </span>
+                )}
+                {project.comingSoon && (
+                  <span className="text-sm bg-yellow-300 text-black font-semibold px-2 py-1 rounded-lg">
+                    Coming Soon
+                  </span>
+                )}
+              </div>
+            </div>
             <p className='text-lg text-gray-600'>{project.description}</p>
             <div className='mt-2'>
               <h3 className='text-xl font-semibold'>Skills Used:</h3>
-              <div className='flex gap-2'>
+              <div className='flex flex-wrap gap-2'>
                 {project.skills.map((skill, i) => (
                   <img key={i} src={skill} alt={`skill-${i}`} className='w-12 h-12' />
                 ))}
