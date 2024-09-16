@@ -20,15 +20,26 @@ export const projects = [
       skills.mui,
       skills.nodejs,
       skills.firebase,
+      skills.vercel,
     ],
     mainFocus: true,
   },
   {
     image: Inventory,
     title: "Inventory Management Dashboard",
-    description: "A dashboard for checking and managing your inventory such as products, users, and more.",
+    description:
+      "A dashboard for checking and managing your inventory such as products, users, and more.",
     comingSoon: true,
-    skills: [skills.nextjs, skills.react, skills.redux, skills.typescript, skills.mui, skills.nodejs, skills.postgresql, skills.aws],
+    skills: [
+      skills.nextjs,
+      skills.react,
+      skills.redux,
+      skills.typescript,
+      skills.mui,
+      skills.nodejs,
+      skills.postgresql,
+      skills.aws,
+    ],
   },
   {
     image: ZipLinkz,

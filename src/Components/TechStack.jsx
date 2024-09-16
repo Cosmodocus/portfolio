@@ -3,7 +3,7 @@ import { skills } from "../constants";
 const techStackItems = [
   "html", "css", "javascript", "typescript", "react", "nextjs", "redux",
   "tailwind", "mui", "nodejs", "firebase", "postgresql", "vscode", "git",
-  "github", "aws", "jest", "postman", "playwright"
+  "github", "aws", "jest", "postman", "playwright", "netlify", "vercel"
 ];
 
 const TechStack = () => {

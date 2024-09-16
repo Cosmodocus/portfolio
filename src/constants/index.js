@@ -17,6 +17,8 @@ import jest from "../assets/jest.svg";
 import postman from "../assets/postman.svg";
 import playwright from "../assets/playwright.svg";
 import github from "../assets/github.svg";
+import netlify from "../assets/netlify.svg";
+import vercel from "../assets/vercel.svg";
 import testimonial1 from "../assets/testimonial1.jpeg";
 import testimonial2 from "../assets/testimonial2.jpeg";
 import testimonial3 from "../assets/testimonial3.jpeg";
@@ -24,6 +26,6 @@ import testimonial4 from "../assets/testimonial4.jpeg";
 import noprofile from "../assets/noprofile.svg";
 
 
-export const skills = {html, css, javascript, typescript, react, nextjs, redux, tailwind, mui, postgresql, nodejs, firebase, vscode, git, aws, jest, postman, playwright, github};
+export const skills = {html, css, javascript, typescript, react, nextjs, redux, tailwind, mui, postgresql, nodejs, firebase, vscode, git, aws, jest, postman, playwright, github, netlify, vercel};
 
 export const testimonialPics = [noprofile, testimonial1, testimonial2, testimonial3, testimonial4];
