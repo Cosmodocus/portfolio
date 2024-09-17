@@ -36,7 +36,7 @@ export const projects = [
       skills.react,
       skills.redux,
       skills.typescript,
-      skills.mui,
+      skills.tailwind,
       skills.nodejs,
       skills.postgresql,
       skills.aws,
