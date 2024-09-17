@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { projects } from "../data/projects";
 import { FaGithub } from "react-icons/fa";
+import ProjectTag from './ProjectTag';
 
 const Projects = () => {
   // Define animation variants
@@ -33,14 +34,25 @@ const Projects = () => {
               </h2>
               <div className="flex flex-wrap gap-2 mt-2">
                 {project.mainFocus && (
-                  <span className="text-sm bg-[#1fc6c6] text-white font-semibold px-2 py-1 rounded-lg">
-                    Current Project
-                  </span>
+                  <ProjectTag
+                    text="Current Project"
+                    bgColor="bg-[#1fc6c6]"
+                    textColor="text-white"
+                  />
+                )}
+                {project.latestProject && (
+                  <ProjectTag
+                    text="Latest Project!"
+                    bgColor="bg-green-500"
+                    textColor="text-white"
+                  />
                 )}
                 {project.comingSoon && (
-                  <span className="text-sm text-black bg-yellow-300  font-semibold px-2 py-1 rounded-lg">
-                    Coming Soon!
-                  </span>
+                  <ProjectTag
+                    text="Coming Soon!"
+                    bgColor="bg-yellow-300"
+                    textColor="text-black"
+                  />
                 )}
               </div>
             </div>
@@ -60,15 +72,11 @@ const Projects = () => {
             </div>
             <div className="flex justify-start mt-2 gap-2">
               <button
-                className={`border-2 rounded-full py-2 px-4 ${
-                  project.comingSoon && "cursor-not-allowed opacity-50"
-                }`}
+                className={`border-2 rounded-full py-2 px-4 ${project.comingSoon && "cursor-not-allowed opacity-50"}`}
                 disabled={project.comingSoon}
               >
                 <a
-                  className={`flex items-center gap-2 ${
-                    project.comingSoon && "text-gray-500"
-                  }`}
+                  className={`flex items-center gap-2 ${project.comingSoon && "text-gray-500"}`}
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -78,9 +86,7 @@ const Projects = () => {
                 </a>
               </button>
               <button
-                className={`border-2 rounded-full py-2 px-4 ${
-                  project.comingSoon && "cursor-not-allowed opacity-50"
-                }`}
+                className={`border-2 rounded-full py-2 px-4 ${project.comingSoon && "cursor-not-allowed opacity-50"}`}
                 disabled={project.comingSoon}
               >
                 {project.comingSoon ? (

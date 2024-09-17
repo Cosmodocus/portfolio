@@ -28,8 +28,9 @@ export const projects = [
     image: Inventory,
     title: "Inventory Management Dashboard",
     description:
-      "A dashboard for checking and managing your inventory such as products, users, and more.",
-    comingSoon: true,
+      "This full-stack inventory management dashboard allows you to monitor your sales summary, top-selling products, inventory levels, user data, and expenses!",
+    githubLink: "https://github.com/Cosmodocus/inventory-management-app",
+    liveDemoLink: "https://main.d2ic9x6mmm9crb.amplifyapp.com",
     skills: [
       skills.nextjs,
       skills.react,
@@ -40,6 +41,7 @@ export const projects = [
       skills.postgresql,
       skills.aws,
     ],
+    latestProject: true,
   },
   {
     image: ZipLinkz,
