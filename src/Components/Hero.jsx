@@ -9,39 +9,32 @@ const Hero = () => {
   };
 
   return (
-    <div className='w-full min-h-screen flex items-center justify-center'>
-      <div className='flex flex-col md:flex-row items-center gap-8 p-6 md:p-12 justify-center'>
+    <div className='w-full min-h-screen flex items-center justify-center bg-light dark:bg-dark'>
+      <div className='flex flex-col md:flex-row items-center gap-8 p-6 md:p-12 justify-center relative'>
+
         {/* Text Section */}
         <div className='flex flex-col gap-2 text-left md:w-1/2'>
           <motion.p
-            className='text-xl md:text-2xl font-semibold' // Styled header
+            className='text-lg md:text-2xl font-semibold'
             variants={fadeInUp}
             initial='hidden'
             animate='visible'
             transition={{ duration: 1, delay: 0.1 }}
           >
-            Hello I&apos;m
+            Welcome to my portfolio!
           </motion.p>
-          <motion.span
-            className='text-2xl md:text-3xl font-bold' // Styled header
-            variants={fadeInUp}
-            initial='hidden'
-            animate='visible'
-            transition={{ duration: 1, delay: 0.2 }}
-          >
-            Reza Homayuni
-          </motion.span>
           <motion.h1
-            className='text-4xl md:text-7xl font-bold mb-4' // Main title
+            className='text-4xl md:text-7xl font-bold mb-4'
             variants={fadeInUp}
             initial='hidden'
             animate='visible'
             transition={{ duration: 1, delay: 0.3 }}
           >
-            Crafting Beautiful Digital Experiences!
+            Crafting <span>Beautiful</span>
+            <br/> <span>Digital</span> Experiences!
           </motion.h1>
           <motion.p
-            className='text-xl md:text-2xl mb-4' // Body text
+            className='text-xl md:text-2xl mb-4'
             variants={fadeInUp}
             initial='hidden'
             animate='visible'
@@ -51,7 +44,7 @@ const Hero = () => {
             based in Canada, dedicated to turning ideas into beautifully designed, functional applications.
           </motion.p>
           <motion.div
-            className='flex items-center  md:justify-start gap-4 pt-2'
+            className='flex justify-start gap-4 pt-2'
             variants={fadeInUp}
             initial='hidden'
             animate='visible'
@@ -72,15 +65,18 @@ const Hero = () => {
         </div>
 
         {/* Profile Image Section */}
-        <motion.img
-          src={ProfilePic}
-          alt='Profile'
-          className='w-52 md:w-80 rounded-full border-4 md:block hidden'
-          variants={fadeInUp}
-          initial='hidden'
-          animate='visible'
-          transition={{ duration: 1 }}
-        />
+        <div className='relative hidden md:block'>
+          <div className='profile-background'></div>
+          <motion.img
+            src={ProfilePic}
+            alt='Profile'
+            className='w-52 md:w-80 rounded-full  shadow-lg transform  hover:scale-105'
+            variants={fadeInUp}
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 1 }}
+          />
+        </div>
       </div>
     </div>
   );

@@ -50,15 +50,15 @@ const ProjectCard = ({ project, cardVariants, index }) => {
       <div className="mt-2">
         <h3 className="text-xl font-semibold">Skills Used:</h3>
         <div className="flex flex-wrap gap-2">
-          {project.skills.map((skill, i) => (
-            <img
-              key={i}
-              src={skill}
-              alt={`skill-${i}`}
-              className="w-12 h-12 max-w-[3rem] max-h-[3rem] object-contain"
-            />
-          ))}
-        </div>
+  {project.skills.map((skill, i) => (
+    <img
+      key={i}
+      src={skill}
+      alt={`skill-${i}`}
+      className="w-12 h-12 max-w-[3rem] max-h-[3rem] object-contain bg-white rounded-md p-1 shadow-md"
+    />
+  ))}
+</div>
       </div>
       {/* GITHUB AND LIVE DEMO BUTTONS */}
       <div className="flex justify-start mt-2 gap-2">

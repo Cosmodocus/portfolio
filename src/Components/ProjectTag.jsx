@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const ProjectTag = ({ text, bgColor, textColor }) => {
   return (
     <h1
-      className={`text-sm font-semibold px-2 py-1 rounded-lg ${bgColor} ${textColor}`}
+      className={`text-sm font-semibold px-2 py-1 rounded-xl ${bgColor} ${textColor}`}
     >
       {text}
     </h1>

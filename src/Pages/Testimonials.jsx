@@ -10,7 +10,7 @@ const Testimonials = () => {
           What People Are Saying
         </h2>
         <motion.div
-          className="flex flex-wrap justify-center gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 justify-center "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}

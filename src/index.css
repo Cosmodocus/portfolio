@@ -13,6 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Custom text styles */
 .text-custom-white {
 	color: white !important;
   }
@@ -33,6 +34,18 @@ body {
 .dark p {
   color: rgb(209, 213, 219);
 }
+
+/* Profile background effect */
+.profile-background {
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: radial-gradient(circle at top left, rgba(31, 198, 198, 0.3), transparent);
+	border-radius: 50%;
+	top: -20%;
+	left: -10%;
+	z-index: -1;
+  }
 
 
 

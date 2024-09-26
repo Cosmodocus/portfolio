@@ -8,7 +8,7 @@ const techStackItems = [
 const TechStack = () => {
   return (
     <section className="mb-16 bg-opacity-50 bg-black p-4 rounded-xl  pb-8">
-      <h2 className="text-base lg:text-2xl font-bold mb-6 text-left pt-4 text-white">Tech Stack</h2>
+      <h2 className="text-base lg:text-2xl font-bold mb-6 text-left pt-4 text-white">My Tech Stack</h2>
       <div className="flex flex-wrap gap-6">
         {techStackItems.map((item) => (
           <div
