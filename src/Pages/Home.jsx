@@ -1,11 +1,11 @@
 import Hero from '../Components/Hero';
 
-const Home = () => {
-	return (
-		<>
-			<Hero />
-		</>
-	);
+const Home = ({ scrollToSection }) => {
+  return (
+    <>
+      <Hero scrollToSection={scrollToSection} />
+    </>
+  );
 };
 
 export default Home;

@@ -61,6 +61,16 @@ body {
   color: #9ca3af;
 }
 
+.highlight-btn {
+  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+  color: #fff;
+}
+
+.highlight-btn:hover {
+  background: linear-gradient(135deg, #1fc6c6a1, #19a0a0);
+  color: #fff;
+}
+
 /* Button hover effect with modern gradient */
 button:hover {
   background: linear-gradient(135deg, #1fc6c6, #19a0a0);

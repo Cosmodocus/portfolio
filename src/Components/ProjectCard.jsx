@@ -63,7 +63,7 @@ const ProjectCard = ({ project, cardVariants, index }) => {
       {/* GITHUB AND LIVE DEMO BUTTONS */}
       <div className="flex justify-start mt-2 gap-2">
         <button
-          className={`border-2 rounded-full py-2 px-4 ${project.comingSoon && "cursor-not-allowed opacity-50"}`}
+          className={`highlight-btn border-2 rounded-md py-2 px-4 ${project.comingSoon && "cursor-not-allowed opacity-50"}`}
           disabled={project.comingSoon}
         >
           <a
@@ -77,7 +77,7 @@ const ProjectCard = ({ project, cardVariants, index }) => {
           </a>
         </button>
         <button
-          className={`border-2 rounded-full py-2 px-4 ${project.comingSoon && "cursor-not-allowed opacity-50"}`}
+          className={`border-2 rounded-md py-2 px-4 ${project.comingSoon && "cursor-not-allowed opacity-50"}`}
           disabled={project.comingSoon}
         >
           {project.comingSoon ? "Live Demo" : (

@@ -4,12 +4,22 @@ import aboutImg from "../assets/aboutImg.svg";
 const About = () => {
   return (
     <div className="bg-gradient-to-r from-teal-500 to-teal-200 py-32">
-      <div className="container mx-auto lg:px-12 px-4">
+      <div className="container mx-auto lg:px-12 px-4 flex flex-col items-center">
         <div className="flex flex-col lg:flex-row">
+          {/* About Image */}
+          <div className="hidden lg:block flex-1">
+            <div className="flex items-center justify-center h-full">
+              <img
+                src={aboutImg}
+                alt="About"
+                className="object-contain max-w-full h-auto"
+              />
+            </div>
+          </div>
           {/* About Content */}
-          <div className="flex-1 lg:pr-8 mb-16 lg:mb-0">
+          <div className="flex-1 lg:pl-8 mb-16 lg:mb-0">
             <section className="mb-6">
-              <div className="bg-opacity-50 bg-black rounded-xl p-4">
+              <div className="bg-opacity-50 bg-black rounded-xl p-4 space-x-4">
                 <h1 className="text-3xl lg:text-4xl font-bold mb-6 text-left text-custom-white text-shadow">
                   About Me
                 </h1>
@@ -30,17 +40,6 @@ const About = () => {
             </section>
 
             <TechStack />
-          </div>
-
-          {/* About Image */}
-          <div className="hidden lg:block flex-1">
-            <div className="flex items-center justify-center h-full">
-              <img
-                src={aboutImg}
-                alt="About"
-                className="object-contain max-w-full h-auto"
-              />
-            </div>
           </div>
         </div>
       </div>
