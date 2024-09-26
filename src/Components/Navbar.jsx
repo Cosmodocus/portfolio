@@ -1,9 +1,8 @@
-import  { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import DarkLightBtn from './DarkLightBtn';
 import Hamburger from './Hamburger';
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
 	const toggleIsDarkMode = () => {
@@ -18,24 +17,13 @@ const Navbar = () => {
 					: 'navbar-light w-full flex justify-between px-8 items-center py-4 text-text shadow-md fixed z-10'
 			}
 		>
-			<h1 className='text-3xl font-bold text-[#1fc6c6]'>RezTech</h1>
+			<span className='text-3xl font-bold '>RezTech</span>
 			<ul className=' gap-8 md:flex hidden'>
-				<li >
-					<Link to='/'>Home</Link>
-				</li>
-				<li>
-					<Link to='/about'>About</Link>
-				</li>
-				<li >
-					<Link to='/details'>Projects</Link>
-				</li>
-				<li >
-					<Link to='/testimonials'>Testimonials</Link>
-				</li>
-				<li >
-					<Link to='/contacts'>Contact</Link>
-				</li>
-
+				<li onClick={() => scrollToSection('home')}>Home</li>
+				<li onClick={() => scrollToSection('about')}>About</li>
+				<li onClick={() => scrollToSection('details')}>Projects</li>
+				<li onClick={() => scrollToSection('testimonials')}>Testimonials</li>
+				<li onClick={() => scrollToSection('cta')}>Contact</li>
 			</ul>
 			<DarkLightBtn className='md:flex hidden' />
 			<Hamburger />

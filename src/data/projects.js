@@ -1,7 +1,7 @@
-import Finance from "../assets/finance.png";
+// import Finance from "../assets/finance.png";
 import Pokedex from "../assets/Pokedex.png";
 import ZipLinkz from "../assets/Ziplinkz.png";
-import Sushi from "../assets/kaiyo-sushi.png";
+// import Sushi from "../assets/kaiyo-sushi.png";
 import MarvelAI from "../assets/Marvel-AI-Revamp.png";
 import Inventory from "../assets/inventory.png";
 import {skills} from "../constants";
@@ -61,21 +61,21 @@ export const projects = [
     skills: [skills.html, skills.css, skills.javascript],
   },
 
-  {
-    image: Sushi,
-    title: "Sushi Website",
-    description:
-      "A website to explore a Sushi restaurant's menus, orders, and FAQ's",
-    githubLink: "https://github.com/Cosmodocus/kaiyo-sushi-website",
-    liveDemoLink: "https://reztech-kaiyo-sushi.netlify.app/",
-    skills: [skills.react, skills.tailwind],
-  },
-  {
-    image: Finance,
-    title: "Landing Page",
-    description: "A mock landing page focused on the data finance niche.",
-    githubLink: "https://github.com/Cosmodocus/finance-responsive-landing-page",
-    liveDemoLink: "https://reztech-finance.netlify.app/",
-    skills: [skills.react, skills.tailwind],
-  },
+  // {
+  //   image: Sushi,
+  //   title: "Sushi Website",
+  //   description:
+  //     "A website to explore a Sushi restaurant's menus, orders, and FAQ's",
+  //   githubLink: "https://github.com/Cosmodocus/kaiyo-sushi-website",
+  //   liveDemoLink: "https://reztech-kaiyo-sushi.netlify.app/",
+  //   skills: [skills.react, skills.tailwind],
+  // },
+  // {
+  //   image: Finance,
+  //   title: "Landing Page",
+  //   description: "A mock landing page focused on the data finance niche.",
+  //   githubLink: "https://github.com/Cosmodocus/finance-responsive-landing-page",
+  //   liveDemoLink: "https://reztech-finance.netlify.app/",
+  //   skills: [skills.react, skills.tailwind],
+  // },
 ];

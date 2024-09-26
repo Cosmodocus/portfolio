@@ -10,7 +10,7 @@ const TestimonialCard = ({ testimonial }) => {
   };
 
   return (
-    <div className="max-w-md mx-auto  shadow-lg rounded-lg overflow-hidden mb-6 border border-gray-200">
+    <div className="max-w-md mx-auto  shadow-lg rounded-lg overflow-hidden mb-6 border bg-white  border-gray-200">
       <div className="flex items-start p-6">
         <img
           src={profilePicture}
@@ -18,15 +18,15 @@ const TestimonialCard = ({ testimonial }) => {
           className="w-16 h-16 rounded-full border-2 border-gray-300 mr-6"
         />
         <div className="flex-1">
-          <h3 className="text-xl font-semibold ">{name}</h3>
-          <p className=" mb-4">{title}</p>
-          <p className=" leading-relaxed mb-4">
+          <h3 className="text-xl font-semibold text-custom-black">{name}</h3>
+          <p className=" mb-4 text-custom-black">{title}</p>
+          <p className=" leading-relaxed mb-4 text-custom-black-2">
             {isExpanded ? text : (text.length > 150 ? `${text.substring(0, 150)}...` : text)}
           </p>
           {text.length > 150 && (
             <a
               onClick={handleToggle}
-              className="text-blue-500 hover:underline">
+              className="text-blue-500 hover:underline cursor-pointer">
               {isExpanded ? 'Show less' : 'Read more'}
             </a>
           )}

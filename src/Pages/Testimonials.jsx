@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 bg-gradient-to-r from-teal-500 to-teal-200">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 mt-24">
+        <h2 className="text-3xl font-bold text-center mb-12 mt-24 text-white">
           What People Are Saying
         </h2>
         <motion.div

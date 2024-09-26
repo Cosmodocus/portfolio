@@ -1,62 +1,101 @@
+/* Importing the Roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+  }
+
 body {
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+.text-custom-white {
+	color: white !important;
+  }
+
+.text-custom-black {
+	color: black !important;
+  }
+.text-custom-black-2 {
+	color: #1f1c1cc3 !important;
+  }
+
+/* Dark mode styles */
 .dark {
-	background: #232121;
-	color: #fff;
+  background: #232121;
+  color: #fff;
 }
 
 .dark p {
-	color: rgb(209, 213, 219);
+  color: rgb(209, 213, 219);
 }
+
+
+
+/* Disabled styles */
 .disabled {
-	cursor: not-allowed;
-	background-color: #9ca3af;
-	color: #e5e7eb;
+  cursor: not-allowed;
+  background-color: #9ca3af;
+  color: #e5e7eb;
 }
 
 .disabled:hover {
-	background-color: #e5e7eb;
-	color: #9ca3af;
+  background-color: #e5e7eb;
+  color: #9ca3af;
 }
 
-
-
+/* Button hover effect with modern gradient */
 button:hover {
-	background-color: #1fc6c6;
-	color: #fff;
+  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+  color: #fff;
 }
 
+/* Light mode styles */
 .light {
-	background: #f3f4f6;
-	color: #000;
+  background: #f3f4f6;
+  color: #000;
 }
 
+/* Text color */
 p {
-	color: rgba(73, 87, 116, 0.797);
+  color: rgba(73, 87, 116, 0.797);
 }
 
+/* Gradient text effect for span */
 span {
-	color: #1fc6c6;
+  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* Gradient effect on li:hover */
 li:hover {
-	color: #1fc6c6;
+  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
+/* Navbar styles for dark and light modes */
 .navbar-dark {
-	background: #1f1c1c;
-	color: #fff;
-	border-bottom: 1px solid #fff;
+  background: #1f1c1c;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .navbar-light {
-	background: #f3f4f6;
-	color: #000;
+  background: #f3f4f6;
+  color: #000;
+}
+
+/* New Gradient Background Example */
+.gradient-background {
+  background: linear-gradient(135deg, #1fc6c6, #19a0a0, #a0e9e9);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
 }
