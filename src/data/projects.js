@@ -2,7 +2,7 @@ import Finance from "../assets/finance.png";
 import Pokedex from "../assets/Pokedex.png";
 import ZipLinkz from "../assets/Ziplinkz.png";
 import Sushi from "../assets/kaiyo-sushi.png";
-import MarvelAI from "../assets/Marvel-ToolPage.png";
+import MarvelAI from "../assets/Marvel-AI-Revamp.png";
 import Inventory from "../assets/inventory.png";
 import {skills} from "../constants";
 export const projects = [
@@ -22,7 +22,7 @@ export const projects = [
       skills.firebase,
       skills.vercel,
     ],
-    mainFocus: true,
+    ongoingTag: true,
   },
   {
     image: Inventory,
@@ -41,7 +41,7 @@ export const projects = [
       skills.postgresql,
       skills.aws,
     ],
-    latestProject: true,
+    newTag: true,
   },
   {
     image: ZipLinkz,

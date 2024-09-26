@@ -23,23 +23,23 @@ const ProjectCard = ({ project, cardVariants, index }) => {
         </h2>
         {/* PROJECT TAGS */}
         <div className="flex flex-wrap gap-2 mt-2">
-          {project.mainFocus && (
+          {project.ongoingTag && (
             <ProjectTag
-              text="Current Project"
+              text="ONGOING!"
               bgColor="bg-[#1fc6c6]"
               textColor="text-white"
             />
           )}
-          {project.latestProject && (
+          {project.newTag && (
             <ProjectTag
-              text="Latest Project!"
+              text="NEW!"
               bgColor="bg-green-500"
               textColor="text-white"
             />
           )}
           {project.comingSoon && (
             <ProjectTag
-              text="Coming Soon!"
+              text="COMING SOON!"
               bgColor="bg-yellow-300"
               textColor="text-black"
             />
@@ -103,8 +103,8 @@ ProjectCard.propTypes = {
     skills: PropTypes.arrayOf(PropTypes.string).isRequired,
     githubLink: PropTypes.string.isRequired,
     liveDemoLink: PropTypes.string.isRequired,
-    mainFocus: PropTypes.bool.isRequired,
-    latestProject: PropTypes.bool.isRequired,
+    ongoingTag: PropTypes.bool,
+    newTag: PropTypes.bool,
     comingSoon: PropTypes.bool.isRequired,
   }).isRequired,
   cardVariants: PropTypes.object.isRequired,

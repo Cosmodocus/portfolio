@@ -47,11 +47,7 @@ const About = () => {
               animate="visible"
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              I am a passionate and skilled developer with expertise in both
-              frontend and backend technologies. I thrive in fast-paced environments
-              and love to tackle challenging problems. With a keen eye for detail
-              and a drive for continuous learning, I am always eager to explore new
-              technologies and improve my skills.
+               I am a hardworking and dedicated frontend developer with a strong passion for creating aesthetic and functional client-side applications using <span className="font-bold">React</span > and <span className="font-bold">Next.js</span>
             </motion.p>
             <motion.p
               className="text-base lg:text-lg text-left"
@@ -60,10 +56,7 @@ const About = () => {
               animate="visible"
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              My background includes working on a variety of projects, from complex
-              web applications to innovative tools. I am committed to delivering
-              high-quality results and collaborating effectively with teams to
-              achieve shared goals.
+             My background involves contributing to open-source projects, often contributing to the frontend development of the application, as well as leading teams of developers under my supervision.
             </motion.p>
           </section>
 

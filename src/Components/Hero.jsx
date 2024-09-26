@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaFolderOpen } from 'react-icons/fa';
+import { FaFolderOpen, FaGithub } from 'react-icons/fa';
 import ProfilePic from '../assets/profile.jpg';
 
 const Hero = () => {
@@ -37,9 +37,9 @@ const Hero = () => {
           animate='visible'
           transition={{ duration: 1, delay: 0.4 }}
         >
-          My name is Reza and I&apos;m a developer based in Canada with expertise in developing{' '}
-          <span className='font-semibold text-coral'>Frontend & Fullstack</span>
-          {' '}web applications.
+          My name is Reza and I&apos;m a frontend developer based in Canada with expertise in developing{' '}
+          <span className='font-semibold text-coral'>Client-side</span>
+          {' '}applications.
         </motion.p>
         <motion.div
           className='flex items-center justify-center gap-4'
@@ -55,6 +55,15 @@ const Hero = () => {
             >
               <FaFolderOpen />
               Check out my Projects!
+            </Link>
+          </button>
+          <button className='md:text-xl text-lg border-4 rounded-full px-4 py-2'>
+            <Link
+              to={'/details'}
+              className='flex items-center gap-2'
+            >
+              <FaGithub />
+              Explore my Github!
             </Link>
           </button>
         </motion.div>

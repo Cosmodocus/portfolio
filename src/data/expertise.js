@@ -14,7 +14,7 @@ export const expertiseData = [
       icon: expertise2,
     },
     {
-      title: "Tech Lead",
+      title: "Team Lead",
       description: "Proven track record of leading development teams, managing projects, and guiding technical decisions.",
       icon: expertise3,
     },
