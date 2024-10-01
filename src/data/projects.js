@@ -13,7 +13,7 @@ export const projects = [
     description:
       "An Educational AI-Assistant Platform that helps improve the workflow of educators and learners through AI generative tools and a Chatbot",
     githubLink: "https://github.com/radicalxdev/marvel-platform",
-    liveDemoLink: "https://app.marvelai.org/",
+    liveDemoLink: "https://ui-revamp.web.app/",
     skills: [
       skills.nextjs,
       skills.react,

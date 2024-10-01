@@ -10,26 +10,19 @@ const TestimonialCard = ({ testimonial }) => {
   };
 
   return (
-    <div className="max-w-xl mx-auto shadow-lg rounded-xl overflow-hidden mb-6  bg-opacity-50 bg-black ">
-      <div className="flex items-start p-6">
+    <div className="max-w-6xl mx-auto shadow-lg rounded-xl overflow-hidden mb-6  bg-opacity-50 bg-black space-x-4">
+      <div className="flex items-start p-6 flex-col">
         <img
           src={profilePicture}
           alt={name}
-          className="w-16 h-16 rounded-full border-2 border-gray-300 mr-6"
+          className="w-20 h-20 rounded-full border-2 border-gray-300 mr-6 mb-2"
         />
         <div className="flex-1">
-          <h3 className="text-xl font-semibold text-custom-white">{name}</h3>
-          <p className=" mb-4 text-custom-white">{title}</p>
-          <p className=" leading-relaxed mb-4 text-custom-white">
-            {isExpanded ? text : (text.length > 150 ? `${text.substring(0, 150)}...` : text)}
+          <h3 className="text-3xl font-semibold text-custom-white">{name}</h3>
+          <p className=" mb-4 text-custom-white text-md">{title}</p>
+          <p className="text-lgleading-relaxed mb-4 text-custom-white">
+            {text}
           </p>
-          {text.length > 150 && (
-            <a
-              onClick={handleToggle}
-              className="text-blue-500 hover:underline cursor-pointer">
-              {isExpanded ? 'Show less' : 'Read more'}
-            </a>
-          )}
         </div>
       </div>
     </div>
