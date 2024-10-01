@@ -14,7 +14,7 @@ const Navbar = ({ scrollToSection }) => {
 			className={`w-full flex justify-between items-center py-4 px-6 fixed z-10 transition-colors duration-300
 				${isDarkMode ? 'navbar-dark text-text shadow-md' : 'navbar-light text-text shadow-md'}`}
 		>
-			<span className='text-3xl font-bold'>RezTech</span>
+			<span className='text-3xl font-bold cursor-pointer' onClick={() => scrollToSection('home')}>RezTech</span>
 			<ul className='gap-8 md:flex hidden'>
 				<li onClick={() => scrollToSection('home')}>Home</li>
 				<li onClick={() => scrollToSection('about')}>About</li>

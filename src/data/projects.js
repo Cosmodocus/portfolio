@@ -4,6 +4,7 @@ import ZipLinkz from "../assets/Ziplinkz.png";
 // import Sushi from "../assets/kaiyo-sushi.png";
 import MarvelAI from "../assets/Marvel-AI-Revamp.png";
 import Inventory from "../assets/inventory.png";
+import GroupEnroll from "../assets/GroupEnroll.png";
 import {skills} from "../constants";
 export const projects = [
   {
@@ -44,12 +45,13 @@ export const projects = [
     newTag: true,
   },
   {
-    image: ZipLinkz,
-    title: "ZipLinkz URL Shortener",
-    description: "A Mock URL shortening web app inspired by Bitly and Ow.ly",
-    githubLink: "https://github.com/Cosmodocus/ziplinkz",
-    liveDemoLink: "https://reztech-ziplinkz.netlify.app/",
-    skills: [skills.react, skills.typescript, skills.tailwind, skills.nodejs],
+    image: GroupEnroll,
+    title: "Group Enroll Admin Dashboard",
+    description: "A mock admin dashboard for Group Enroll to showcase following similar brand design elements in their site but for an admin portal.",
+    githubLink: "https://github.com/Cosmodocus/group-enroll-admin-dashboard",
+    liveDemoLink: "https://groupenroll-admin-portal.netlify.app/",
+    skills: [skills.react, skills.mui],
+    newTag: true,
   },
   {
     image: Pokedex,
