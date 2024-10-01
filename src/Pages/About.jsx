@@ -20,7 +20,7 @@ const About = () => {
           <div className="flex-1 lg:pl-8 mb-16 lg:mb-0">
             <section className="mb-6">
               <div className="bg-opacity-50 bg-black rounded-xl p-4 space-x-4">
-                <h1 className="text-3xl lg:text-4xl font-bold mb-6 text-left text-custom-white text-shadow">
+                <h1 className="text-3xl lg:text-4xl font-bold mb-6 md:text-left text-center text-custom-white text-shadow">
                   About Me
                 </h1>
                 <p className="text-base lg:text-lg text-left mb-6 text-custom-white rounded text-shadow">

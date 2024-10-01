@@ -3,12 +3,12 @@ import { expertiseData } from "../data/expertise";
 const Expertise = () => {
   return (
     <div className='container mx-auto py-16'>
-      <h2 className='text-4xl font-bold mb-12 text-center'>Areas of Expertise</h2>
+      <h2 className='md:text-6xl text-4xl font-bold mb-12 text-center'>Areas of Expertise</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-12'>
         {expertiseData.map((item) => (
           <div
             key={item.title}
-            className='flex flex-col items-center p-8 border rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl'
+            className='flex flex-col items-center p-8 bg border rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl'
           >
             <img
               src={item.icon}
