@@ -1,6 +1,6 @@
 // import Finance from "../assets/finance.png";
 import Pokedex from "../assets/Pokedex.png";
-import ZipLinkz from "../assets/Ziplinkz.png";
+// import ZipLinkz from "../assets/Ziplinkz.png";
 // import Sushi from "../assets/kaiyo-sushi.png";
 import MarvelAI from "../assets/Marvel-AI-Revamp.png";
 import Inventory from "../assets/inventory.png";

@@ -10,21 +10,27 @@ const TestimonialCard = ({ testimonial }) => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto shadow-lg rounded-xl overflow-hidden mb-6  bg-opacity-50 bg-black space-x-4">
-      <div className="flex items-start p-6 flex-col">
+    <div className="max-w-4xl mx-auto shadow-lg rounded-xl overflow-hidden mb-6 bg-white dark:bg-gray-800 p-6 transition duration-300 ease-in-out transform ">
+      <div className="flex items-center mb-4">
         <img
           src={profilePicture}
           alt={name}
-          className="w-20 h-20 rounded-full border-2 border-gray-300 mr-6 mb-2"
+          className="w-20 h-20 rounded-full border-2 border-teal-500 shadow-lg mr-4"
         />
         <div className="flex-1">
-          <h3 className="text-3xl font-semibold text-custom-white">{name}</h3>
-          <p className=" mb-4 text-custom-white text-md">{title}</p>
-          <p className="text-lgleading-relaxed mb-4 text-custom-white">
-            {text}
-          </p>
+          <h3 className="text-2xl font-bold text-gray-800 dark:text-white">{name}</h3>
+          <p className="text-md text-gray-600 dark:text-gray-300">{title}</p>
         </div>
       </div>
+      <p className={`text-gray-700 dark:text-gray-300 ${isExpanded ? '' : 'line-clamp-3'} transition-all duration-300`}>
+        {text}
+      </p>
+      <button
+        onClick={handleToggle}
+        className="mt-4 text-teal-500 hover:text-teal-700 transition duration-300 focus:outline-none"
+      >
+        {isExpanded ? 'Show Less' : 'Read More'}
+      </button>
     </div>
   );
 };
