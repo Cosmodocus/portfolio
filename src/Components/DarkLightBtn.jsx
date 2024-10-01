@@ -1,31 +1,8 @@
-import  { useState } from 'react';
+// DarkLightBtn.jsx
 import { LuLightbulb, LuLightbulbOff } from 'react-icons/lu';
 import PropTypes from 'prop-types';
 
-const DarkLightBtn = ({ className }) => {
-	const [isDarkMode, setIsDarkMode] = useState(false);
-
-	const toggleIsDarkMode = () => {
-		setIsDarkMode(!isDarkMode);
-		if (!isDarkMode) {
-			document.documentElement.classList.add('dark');
-			document.documentElement.classList.remove('light');
-			document.querySelectorAll('nav').forEach((nav) => {
-				nav.classList.add('navbar-dark');
-				nav.classList.remove('navbar-light');
-			});
-			localStorage.setItem('theme', 'dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-			document.documentElement.classList.add('light');
-			document.querySelectorAll('nav').forEach((nav) => {
-				nav.classList.remove('navbar-dark');
-				nav.classList.add('navbar-light');
-			});
-			localStorage.setItem('theme', 'light');
-		}
-	};
-
+const DarkLightBtn = ({ isDarkMode, toggleIsDarkMode, className }) => {
 	return (
 		<div>
 			<button
@@ -40,6 +17,8 @@ const DarkLightBtn = ({ className }) => {
 
 DarkLightBtn.propTypes = {
 	className: PropTypes.string.isRequired,
+	isDarkMode: PropTypes.bool.isRequired,
+	toggleIsDarkMode: PropTypes.func.isRequired,
 };
 
 export default DarkLightBtn;

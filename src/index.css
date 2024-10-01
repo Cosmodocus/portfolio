@@ -1,5 +1,6 @@
-/* Importing the Roboto font */
+/* Importing the Roboto and Merriweather fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,23 +8,24 @@
 
 html {
 	scroll-behavior: smooth;
-  }
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Merriweather', sans-serif; /* Updated to include Merriweather */
 }
 
 /* Custom text styles */
 .text-custom-white {
 	color: white !important;
-  }
+}
 
 .text-custom-black {
 	color: black !important;
-  }
+}
+
 .text-custom-black-2 {
 	color: #1f1c1cc3 !important;
-  }
+}
 
 /* Dark mode styles */
 .dark {
@@ -45,8 +47,49 @@ body {
 	top: -20%;
 	left: -10%;
 	z-index: -1;
-  }
+}
 
+/* Navbar styles for dark and light modes */
+.navbar-dark {
+  background: linear-gradient(135deg, #1f1c1c, #232323);
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-light {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #000;
+}
+
+/* Navbar item styles */
+.navbar-item {
+  font-family: 'Merriweather', serif;
+  font-weight: 500; /* Slightly bolder */
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Add underline effect on hover */
+.navbar-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1fc6c6;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-item:hover::after {
+  width: 100%;
+}
+
+/* Gradient effect on li:hover */
+li:hover {
+  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 /* Disabled styles */

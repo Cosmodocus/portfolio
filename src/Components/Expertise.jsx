@@ -2,19 +2,15 @@ import { expertiseData } from "../data/expertise";
 
 const Expertise = () => {
   return (
-    <div className='container mx-auto py-16'>
+    <div className='container mx-auto px-6 py-32 flex flex-col items-center justify-center'>
       <h2 className='md:text-6xl text-4xl font-bold mb-12 text-center'>Areas of Expertise</h2>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-12'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-auto'>
         {expertiseData.map((item) => (
           <div
             key={item.title}
-            className='flex flex-col items-center p-8 bg border rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl'
+            className='flex flex-col items-center p-8 bg border rounded-xl shadow-lg transition-transform transform'
           >
-            <img
-              src={item.icon}
-              alt={item.title}
-              className='w-32 h-32 mb-4 object-contain'
-            />
+            <img src={item.icon} alt={item.title} className='w-32 h-32 mb-4 object-contain' />
             <span className='text-2xl font-semibold mb-2'>{item.title}</span>
             <p className='text-base text-center'>{item.description}</p>
           </div>
