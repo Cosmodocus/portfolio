@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import DarkLightBtn from './DarkLightBtn';
 import Hamburger from './Hamburger';
+import PropTypes from 'prop-types';
 
 const Navbar = ({ scrollToSection }) => {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -54,6 +55,12 @@ const Navbar = ({ scrollToSection }) => {
 			<Hamburger scrollToSection={scrollToSection} isDarkMode={isDarkMode} toggleIsDarkMode={toggleIsDarkMode} />
 		</nav>
 	);
+};
+
+Navbar.propTypes = {
+	scrollToSection: PropTypes.func.isRequired,
+	isDarkMode: PropTypes.bool.isRequired,
+	toggleIsDarkMode: PropTypes.func.isRequired
 };
 
 export default Navbar;
