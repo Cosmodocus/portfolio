@@ -176,3 +176,6 @@ span {
   left: -10%;
   z-index: -1;
 }
+.glow-effect {
+  box-shadow: 0 0 10px rgba(110, 255, 233, 0.5), 0 0 20px rgba(110, 255, 233, 0.5), 0 0 30px rgba(31, 198, 198, 0.5);
+}
