@@ -1,11 +1,16 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaPhoneAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import ProfilePic from '../assets/profile.jpg';
 
 const Hero = ({ scrollToSection }) => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
+  };
+
+  const textAnimation = {
+    hidden: { scale: 0.95, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
   };
 
   return (
@@ -23,16 +28,18 @@ const Hero = ({ scrollToSection }) => {
           >
             Welcome to my portfolio!
           </motion.p>
+
           <motion.h1
             className='text-4xl md:text-7xl font-bold mb-4'
-            variants={fadeInUp}
+            variants={textAnimation}
             initial='hidden'
             animate='visible'
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             Crafting <span>Beautiful</span>
             <br /> <span>Digital</span> Experiences
           </motion.h1>
+
           <motion.p
             className='text-xl md:text-2xl mb-4'
             variants={fadeInUp}
@@ -43,6 +50,7 @@ const Hero = ({ scrollToSection }) => {
             My name is Reza, and I am a <span className='font-semibold text-coral'>Frontend Developer </span>
             based in Canada, dedicated to turning ideas into beautifully designed and functional web applications.
           </motion.p>
+
           <motion.div
             className='flex justify-start gap-4 pt-2'
             variants={fadeInUp}
@@ -52,7 +60,6 @@ const Hero = ({ scrollToSection }) => {
           >
             <button className='highlight-btn md:text-xl text-md border-4 rounded-md px-4 py-2'>
               <a className='flex items-center gap-2' onClick={() => scrollToSection('cta')}>
-                <FaPhoneAlt />
                 Contact me
               </a>
             </button>
@@ -63,8 +70,9 @@ const Hero = ({ scrollToSection }) => {
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                <FaGithub />
                 Explore my Github!
+                <FaGithub />
+
               </a>
             </button>
           </motion.div>

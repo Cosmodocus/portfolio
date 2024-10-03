@@ -7,205 +7,172 @@
 @tailwind utilities;
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Updated to include Merriweather */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Custom text styles */
 .text-custom-white {
-	color: white !important;
+    color: white !important;
 }
 
 .text-custom-black {
-	color: black !important;
+    color: black !important;
 }
 
 .text-custom-black-2 {
-	color: #1f1c1cc3 !important;
+    color: #1f1c1cc3 !important;
 }
 
 /* Dark mode styles */
 .dark {
-  background: #232121;
-  color: #fff;
+    background: #232121;
+    color: #fff;
 }
 
 .dark p {
-  color: rgb(209, 213, 219);
+    color: rgb(209, 213, 219);
 }
 
 /* Profile background effect */
 .profile-background {
-	position: absolute;
-	width: 120%;
-	height: 120%;
-	background: radial-gradient(circle at top left, rgba(31, 198, 198, 0.3), transparent);
-	border-radius: 50%;
-	top: -20%;
-	left: -10%;
-	z-index: -1;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at top left, rgba(31, 198, 198, 0.3), transparent);
+    border-radius: 50%;
+    top: -20%;
+    left: -10%;
+    z-index: -1;
 }
 
 /* Navbar styles for dark and light modes */
 .navbar-dark {
-  background: linear-gradient(135deg, #1f1c1c, #232323);
-  color: #fff;
-  border-bottom: 1px solid #fff;
+    background: linear-gradient(135deg, #1f1c1c, #232323);
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .navbar-light {
-  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
-  color: #000;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    color: #000;
 }
 
 /* Navbar item styles */
 .navbar-item {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500; /* Slightly bolder */
-  cursor: pointer;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* Add underline effect on hover */
-.navbar-item::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #1fc6c6;
-  transition: width 0.3s ease, background-color 0.3s ease;
-}
-
-.navbar-item:hover::after {
-  width: 100%;
-}
-
-/* Gradient effect on li:hover */
-li:hover {
-  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-/* Disabled styles */
-.disabled {
-  cursor: not-allowed;
-  background-color: #9ca3af;
-  color: #e5e7eb;
-}
-
-.disabled:hover {
-  background-color: #e5e7eb;
-  color: #9ca3af;
-}
-
-.highlight-btn {
-  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
-  color: #fff;
-}
-
-.highlight-btn:hover {
-  background: linear-gradient(135deg, #1fc6c6a1, #19a0a0);
-  color: #fff;
-}
-
-/* Button hover effect with modern gradient */
-button:hover {
-  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
-  color: #fff;
-}
-
-/* Light mode styles */
-.light {
-  background: #f3f4f6;
-  color: #000;
-}
-
-/* Text color */
-p {
-  color: rgba(73, 87, 116, 0.797);
-}
-
-/* Gradient text effect for span */
-span {
-  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Gradient effect on li:hover */
-li:hover {
-  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-}
-
-/* Navbar styles for dark and light modes */
-.navbar-dark {
-  background: #1f1c1c;
-  color: #fff;
-  border-bottom: 1px solid #fff;
-}
-
-.navbar-light {
-  background: #f3f4f6;
-  color: #000;
-}
-/* Navbar item styles */
-.navbar-item {
-  font-family: 'Roboto', serif;
-  font-weight: 500; /* Slightly bolder */
-  cursor: pointer;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* Add underline effect on hover */
-.navbar-item::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #1fc6c6;
-  transition: width 0.3s ease, background-color 0.3s ease;
-}
-
-.navbar-item:hover::after {
-  width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Change transition to include color */
+    padding: 0.5rem 1rem; /* Consistent padding */
+    height: 2.5rem; /* Ensure all items have the same height */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    border-radius: 9999px; /* Fully rounded bubble */
 }
 
 /* Active class styles */
 .navbar-item.active {
-  background: #0d9488; /* Change color when active */
-  color: white;
+    background: #0d9488; /* Change color when active */
+    color: white; /* Keep text color consistent when active */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a bubble effect */
 }
 
+/* Hover effect for active item */
+.navbar-item.active:hover {
+    background: #0f766e; /* Darker shade on hover */
+    color: white; /* Ensure text remains white on hover */
+}
 
-/* Hover effect for the bubble */
-.navbar-item:hover::after {
-  width: 100%;
-  height: 10%;
-  opacity: 0.8; /* Slightly fade on hover */
+/* Normal hover effect for navbar items */
+.navbar-item:hover {
+    background: rgba(31, 198, 198, 0.7); /* Add a subtle background on hover */
+    color: white; /* Keep text color white on hover */
 }
 
 /* Gradient effect on li:hover */
-li:hover {
-  background: linear-gradient(135deg, #1fc6c6, #19a0a0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* li:hover {
+    background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* Disabled styles */
+.disabled {
+    cursor: not-allowed;
+    background-color: #9ca3af;
+    color: #e5e7eb;
 }
 
+.disabled:hover {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+}
+
+.highlight-btn {
+    background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+    color: #fff;
+}
+
+.highlight-btn:hover {
+    background: linear-gradient(135deg, #1fc6c6a1, #19a0a0);
+    color: #fff;
+}
+
+/* Button hover effect with modern gradient */
+button:hover {
+    background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+    color: #fff;
+}
+
+/* Light mode styles */
+.light {
+    background: #f3f4f6;
+    color: #000;
+}
+
+/* Text color */
+p {
+    color: rgba(73, 87, 116, 0.797);
+}
+
+/* Gradient text effect for span */
+span {
+    background: linear-gradient(135deg, #1fc6c6, #19a0a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* New Gradient Background Example */
 .gradient-background {
-  background: linear-gradient(135deg, #1fc6c6, #19a0a0, #a0e9e9);
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
+    background: linear-gradient(135deg, #1fc6c6, #19a0a0, #a0e9e9);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Adjust hover effects on cards */
+.flex {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Background circle effect for design */
+.profile-background {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at top left, rgba(31, 198, 198, 0.3), transparent);
+  border-radius: 50%;
+  top: -20%;
+  left: -10%;
+  z-index: -1;
 }

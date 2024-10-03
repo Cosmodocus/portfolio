@@ -50,7 +50,7 @@ export const projects = [
     description: "A mock admin dashboard for Group Enroll to showcase following similar brand design elements in their site but for an admin portal.",
     githubLink: "https://github.com/Cosmodocus/group-enroll-admin-dashboard",
     liveDemoLink: "https://groupenroll-admin-portal.netlify.app/",
-    skills: [skills.react, skills.mui],
+    skills: [skills.react, skills.mui, skills.netlify],
     newTag: true,
   },
   {

@@ -4,9 +4,12 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <section className="py-12 px-4 bg-gradient-to-r from-teal-500 to-teal-200">
-      <div className="container mx-auto">
-        <h2 className="md:text-6xl text-4xl font-bold text-center mb-12 mt-24 text-white">What People Are Saying</h2>
+    <section className="py-12 px-4 relative overflow-hidden">
+
+      <div className="container mx-auto relative">
+        <h2 className="md:text-6xl text-4xl font-bold text-center mb-12 mt-24">
+          Kind words from <span>satisfied clients</span>
+        </h2>
         <motion.div
           className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
           initial={{ opacity: 0 }}

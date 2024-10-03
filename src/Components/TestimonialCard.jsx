@@ -27,7 +27,7 @@ const TestimonialCard = ({ testimonial }) => {
       </p>
       <button
         onClick={handleToggle}
-        className="mt-4 text-teal-500 hover:text-teal-700 transition duration-300 focus:outline-none"
+        className="mt-4 text-teal-500  transition duration-300 focus:outline-none rounded-sm p-1"
       >
         {isExpanded ? 'Show Less' : 'Read More'}
       </button>

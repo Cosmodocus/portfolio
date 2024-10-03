@@ -1,72 +1,60 @@
 import { motion } from 'framer-motion';
 import { MdEmail } from 'react-icons/md';
-import { FaGithub, FaLinkedin, FaPhoneAlt, FaTwitter } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 
 const Contacts = () => {
   return (
-    <div className="w-full flex flex-col items-center text-center justify-center h-screen gap-8 py-[300px]">
+    <div className="w-full flex flex-col items-center text-center justify-center gap-8 py-[300px] relative">
+      <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-teal-200 opacity-40 "></div>
       <motion.h1
-        className="md:text-8xl text-4xl mt-20"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        className="md:text-7xl text-4xl font-bold relative "
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        Let&apos;s Work Together
+        Get In Touch!
       </motion.h1>
-      <motion.p
-        className="md:text-3xl text-xl text-center md:leading-[42px] md:w-[1200px] mx-2"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+      <motion.div
+        className="relative "
+        initial={{ scale: 0.9 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.5 }}
       >
-        Have a project in mind or just want to say hello? I&apos;d love to hear from
-        you! Feel free to reach out to me using the contact information below:
-      </motion.p>
-      <motion.ul
-        className="border p-8 rounded-xl shadow-md text-left flex flex-col gap-4 mx-2"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        {[
-          { icon: <MdEmail size={25} />, text: 'homayunir@gmail.com', link: null },
-          { icon: <FaPhoneAlt size={25} />, text: '(647)-535-4495', link: null },
-          {
-            icon: <FaLinkedin size={30} />,
-            text: 'https://www.linkedin.com/in/reza-homayuni-0503861b6/',
-            link: 'https://www.linkedin.com/in/reza-homayuni-0503861b6/',
-          },
-          {
-            icon: <FaGithub size={30} />,
-            text: 'https://github.com/Cosmodocus',
-            link: 'https://github.com/Cosmodocus',
-          },
-          {
-            icon: <FaTwitter size={30} />,
-            text: 'https://twitter.com/Rez_Technology',
-            link: 'https://twitter.com/Rez_Technology',
-          },
-        ].map(({ icon, text, link }, index) => (
-          <motion.li
-            key={index}
-            className="md:text-2xl flex items-center gap-2"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
-            {link ? (
-              <Link to={link} target="_blank" className="flex items-center gap-2">
-                {icon} {text}
-              </Link>
-            ) : (
-              <>
-                {icon} {text}
-              </>
-            )}
-          </motion.li>
-        ))}
-      </motion.ul>
+        <p className="md:text-2xl text-xl">Reach out via any of the platforms below.</p>
+      </motion.div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 relative  max-w-6xl px-4">
+        {/* Email */}
+        <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <a href="mailto:homayunir@gmail.com" className="text-3xl text-teal-500 hover:text-teal-700">
+            <MdEmail />
+          </a>
+          <span className="text-lg text-gray-800 mt-2">homayunir@gmail.com</span>
+        </div>
+
+        {/* Phone */}
+        <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <a href="tel:+16475354495" className="text-3xl text-teal-500 hover:text-teal-700">
+            <FaPhoneAlt />
+          </a>
+          <span className="text-lg text-gray-800 mt-2">(647)535-4495</span>
+        </div>
+
+        {/* LinkedIn */}
+        <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <a href="linkedin.com/in/reza-homayuni-0503861b6" target="_blank" rel="noopener noreferrer" className="text-3xl text-teal-500 hover:text-teal-700">
+            <FaLinkedin />
+          </a>
+          <span className="text-lg text-gray-800 mt-2">LinkedIn</span>
+        </div>
+
+        {/* GitHub */}
+        <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <a href="https://github.com/Cosmodocus" target="_blank" rel="noopener noreferrer" className="text-3xl text-teal-500 hover:text-teal-700">
+            <FaGithub />
+          </a>
+          <span className="text-lg text-gray-800 mt-2">GitHub</span>
+        </div>
+      </div>
     </div>
   );
 };

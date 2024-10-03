@@ -26,12 +26,12 @@ const Hamburger = ({ scrollToSection, isDarkMode, toggleIsDarkMode }) => {
 					onClick={handleOutsideClick}
 				>
 					<div className='bg-white text-black text-center w-[300px] gap-4 shadow-lg rounded-lg p-8 flex flex-col items-center z-10 transform transition-transform duration-300'>
-						<ul className='flex flex-col gap-4 text-lg'>
-							<li className='font-semibold hover:text-cyan-500 navbar-item ' onClick={() => { scrollToSection('home'); toggleNavbar(); }}>Home</li>
-							<li className='font-semibold hover:text-cyan-500 navbar-item' onClick={() => { scrollToSection('about'); toggleNavbar(); }}>About</li>
-							<li className='font-semibold hover:text-cyan-500 navbar-item' onClick={() => { scrollToSection('details'); toggleNavbar(); }}>Projects</li>
-							<li className='font-semibold hover:text-cyan-500 navbar-item' onClick={() => { scrollToSection('testimonials'); toggleNavbar(); }}>Testimonials</li>
-							<li className='font-semibold hover:text-cyan-500 navbar-item' onClick={() => { scrollToSection('cta'); toggleNavbar(); }}>Contact</li>
+						<ul className='flex flex-col gap-4 text-lg items-center'>
+							<li className='font-semibold  navbar-item ' onClick={() => { scrollToSection('home'); toggleNavbar(); }}>Home</li>
+							<li className='font-semibold  navbar-item' onClick={() => { scrollToSection('about'); toggleNavbar(); }}>About</li>
+							<li className='font-semibold  navbar-item' onClick={() => { scrollToSection('details'); toggleNavbar(); }}>Projects</li>
+							<li className='font-semibold  navbar-item' onClick={() => { scrollToSection('testimonials'); toggleNavbar(); }}>Testimonials</li>
+							<li className='font-semibold  navbar-item' onClick={() => { scrollToSection('cta'); toggleNavbar(); }}>Contact</li>
 						</ul>
 						<DarkLightBtn isDarkMode={isDarkMode} toggleIsDarkMode={toggleIsDarkMode} />
 					</div>
