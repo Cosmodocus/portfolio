@@ -3,20 +3,19 @@ import { motion } from "framer-motion";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Details from "./Pages/Details";
-import CTA from "./Pages/CTA";
 import Footer from "./Components/Footer";
 import Testimonials from "./Pages/Testimonials";
 import Expertise from "./Components/Expertise";
+import Projects from "./Pages/Projects";
+import Contacts from "./Components/Contacts";
 
 const App = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const expertiseRef = useRef(null);
-  const detailsRef = useRef(null);
+  const projectsRef = useRef(null);
   const testimonialsRef = useRef(null);
-  const ctaRef = useRef(null);
-
+  const contactsRef = useRef(null);
 
   const scrollToSection = (section) => {
     switch (section) {
@@ -29,14 +28,14 @@ const App = () => {
       case "expertise":
         expertiseRef.current.scrollIntoView({ behavior: "smooth" });
         break;
-      case "details":
-        detailsRef.current.scrollIntoView({ behavior: "smooth" });
+      case "projects":
+        projectsRef.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "testimonials":
         testimonialsRef.current.scrollIntoView({ behavior: "smooth" });
         break;
-      case "cta":
-        ctaRef.current.scrollIntoView({ behavior: "smooth" });
+      case "contacts":
+        contactsRef.current.scrollIntoView({ behavior: "smooth" });
         break;
       default:
         break;
@@ -44,8 +43,10 @@ const App = () => {
   };
 
   return (
-    <div>
-      <Navbar scrollToSection={scrollToSection} />
+    <div className="flex flex-col">
+      <div className="flex justify-center">
+        <Navbar scrollToSection={scrollToSection} />
+      </div>
 
       <motion.div
         ref={homeRef}
@@ -75,12 +76,12 @@ const App = () => {
       </motion.div>
 
       <motion.div
-        ref={detailsRef}
+        ref={projectsRef}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Details />
+        <Projects />
       </motion.div>
 
       <motion.div
@@ -93,12 +94,12 @@ const App = () => {
       </motion.div>
 
       <motion.div
-        ref={ctaRef}
+        ref={contactsRef}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <CTA />
+          <Contacts />
       </motion.div>
 
       <Footer />

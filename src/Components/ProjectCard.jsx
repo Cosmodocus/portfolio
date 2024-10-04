@@ -21,32 +21,28 @@ const ProjectCard = ({project, cardVariants, index}) => {
       <div className="flex flex-col items-start">
         <h2 className="md:text-4xl text-2xl font-bold mt-4">{project.title}</h2>
         <div className="flex flex-wrap gap-2 mt-2">
-        <div className="flex flex-wrap gap-2 mt-2">
-  {project.ongoingTag && (
-    <ProjectTag
-      text="In Progress"
-      bgColor="bg-blue-400"
-      textColor="text-white"
-    />
-  )}
-  {project.newTag && (
-    <ProjectTag
-      text="Just Launched"
-      bgColor="bg-orange-500"
-      textColor="text-white"
-    />
-  )}
-  {project.comingSoon && (
-    <ProjectTag
-      text="Stay Tuned"
-      bgColor="bg-purple-300"
-      textColor="text-black"
-    />
-  )}
-</div>
-
-</div>
-
+          {project.ongoingTag && (
+            <ProjectTag
+              text="In Progress"
+              bgColor="bg-teal-400"
+              textColor="text-white"
+            />
+          )}
+          {project.newTag && (
+            <ProjectTag
+              text="Just Launched"
+              bgColor="bg-teal-500"
+              textColor="text-white"
+            />
+          )}
+          {project.comingSoon && (
+            <ProjectTag
+              text="Stay Tuned"
+              bgColor="bg-teal-600"
+              textColor="text-white"
+            />
+          )}
+        </div>
       </div>
       <p className="text-lg text-gray-600">{project.description}</p>
       <div className="mt-2">
@@ -65,7 +61,7 @@ const ProjectCard = ({project, cardVariants, index}) => {
       {/* GITHUB AND LIVE DEMO BUTTONS */}
       <div className="flex justify-start mt-2 gap-2">
         <button
-          className={` border-2 rounded-md py-2 px-4 ${
+          className={`border-2 rounded-md py-2 px-4 ${
             project.comingSoon && "cursor-not-allowed opacity-50"
           }`}
           disabled={project.comingSoon}

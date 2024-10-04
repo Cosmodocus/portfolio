@@ -20,7 +20,7 @@ const Hero = ({ scrollToSection }) => {
         {/* Text Section */}
         <div className='flex flex-col gap-2 text-left md:w-1/2'>
           <motion.p
-            className='text-lg md:text-xl font-semibold'
+            className='text-lg md:text-2xl font-semibold'
             variants={fadeInUp}
             initial='hidden'
             animate='visible'

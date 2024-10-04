@@ -18,12 +18,14 @@ const About = () => {
                   About Me
                 </h1>
                 <p className="text-base lg:text-lg mb-4 text-custom-white rounded text-shadow text-left">
-                  I am a hardworking and dedicated frontend developer with a strong passion for creating aesthetic and functional client-side applications using{" "}
+                  I&apos;m a passionate frontend developer with expertise in building dynamic and responsive web applications.
+                  My journey in tech began with a fascination for creating seamless user experiences using{" "}
                   <span className="font-bold">React</span> and{" "}
                   <span className="font-bold">Next.js</span>.
                 </p>
                 <p className="text-base lg:text-lg text-left text-custom-white text-shadow">
-                  My background involves contributing to open-source projects, often contributing to the frontend development of the application, as well as leading teams of developers under my supervision.
+                  With a solid background in collaborating on diverse projects, I thrive in fast-paced environments
+                  where I can leverage my skills in frontend technologies and contribute to impactful solutions.
                 </p>
               </div>
             </section>
