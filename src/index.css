@@ -49,12 +49,20 @@ body {
     z-index: -1;
 }
 
-/* Navbar styles for dark and light modes */
+/* Navbar styles for dark mode with 3D pop-out effect */
 .navbar-dark {
     background: linear-gradient(135deg, #1f1c1c, #232323);
     color: #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 8px 10px rgba(0, 0, 0, 0.2), 0 12px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+/* Optional hover effect for a more dynamic 3D effect */
+.navbar-dark:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 12px 15px rgba(0, 0, 0, 0.3), 0 18px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .navbar-light {
     background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
