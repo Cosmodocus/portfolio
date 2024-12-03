@@ -8,6 +8,22 @@ import GroupEnroll from "../assets/GroupEnroll.png";
 import {skills} from "../constants";
 export const projects = [
   {
+    image: GroupEnroll,
+    title: "Group Enroll",
+    description:
+      "An admin portal for this insurance company that members, sponsors, and advisors manage plan details, dependents, payments, and more",
+    githubLink: "https://github.com/radicalxdev/marvel-platform",
+    liveDemoLink: "https://ui-revamp.web.app/",
+    skills: [
+      skills.react,
+      skills.redux,
+      skills.mui,
+      skills.css,
+      skills.html,
+    ],
+    ongoingTag: true,
+  },
+  {
     image: MarvelAI,
     title: "Marvel AI",
     description:
@@ -42,15 +58,6 @@ export const projects = [
       skills.postgresql,
       skills.aws,
     ],
-    newTag: true,
-  },
-  {
-    image: GroupEnroll,
-    title: "Group Enroll Admin Dashboard",
-    description: "A mock admin dashboard for Group Enroll to showcase following similar brand design elements in their site but for an admin portal.",
-    githubLink: "https://github.com/Cosmodocus/group-enroll-admin-dashboard",
-    liveDemoLink: "https://groupenroll-admin-portal.netlify.app/",
-    skills: [skills.react, skills.mui, skills.netlify],
     newTag: true,
   },
   {
