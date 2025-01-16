@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
 import ProfilePic from '../assets/profile.jpg';
 
-const Hero = ({ scrollToSection }) => {
+const Hero = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -47,8 +47,8 @@ const Hero = ({ scrollToSection }) => {
             animate='visible'
             transition={{ duration: 1, delay: 0.4 }}
           >
-            My name is Reza, and I am a <span className='font-semibold text-coral'>Frontend Developer </span>
-            based in Canada, dedicated to turning ideas into beautifully designed and functional web applications.
+            My name is Reza, and I am a <span className='font-semibold text-coral'>Full-stack Developer </span>
+            based in Canada, dedicated to solving business problems and crafting production-level web applications.
           </motion.p>
 
           <motion.div
@@ -59,11 +59,6 @@ const Hero = ({ scrollToSection }) => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             <button className='highlight-btn md:text-xl text-md border-4 rounded-md px-4 py-2'>
-              <a className='flex items-center gap-2' onClick={() => scrollToSection('cta')}>
-                Contact me
-              </a>
-            </button>
-            <button className='md:text-xl text-md border-4 rounded-md px-4 py-2'>
               <a
                 href='https://github.com/Cosmodocus'
                 className='flex items-center gap-2'

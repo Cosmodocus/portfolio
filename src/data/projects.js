@@ -11,9 +11,8 @@ export const projects = [
     image: GroupEnroll,
     title: "Group Enroll",
     description:
-      "An admin portal for this insurance company that members, sponsors, and advisors manage plan details, dependents, payments, and more",
-    githubLink: "https://github.com/radicalxdev/marvel-platform",
-    liveDemoLink: "https://ui-revamp.web.app/",
+      "Collaborating with a team of developers on a Client-Side B2B InsurTech Admin Portal for managing Group Benefits, as well as a Customer Portal for Travel Insurance.",
+    liveDemoLink: "https://groupenroll.ca/",
     skills: [
       skills.react,
       skills.redux,
@@ -27,9 +26,9 @@ export const projects = [
     image: MarvelAI,
     title: "Marvel AI",
     description:
-      "An Educational AI-Assistant Platform that helps improve the workflow of educators and learners through AI generative tools and a Chatbot",
+      "An Educational AI-Assistant Platform that helps improve the workflow of educators and learners with the power of LLM and AI Agents.",
     githubLink: "https://github.com/radicalxdev/marvel-platform",
-    liveDemoLink: "https://ui-revamp.web.app/",
+    liveDemoLink: "https://app.marvelai.org/",
     skills: [
       skills.nextjs,
       skills.react,
@@ -41,34 +40,34 @@ export const projects = [
     ],
     ongoingTag: true,
   },
-  {
-    image: Inventory,
-    title: "Inventory Management Dashboard",
-    description:
-      "This full-stack inventory management dashboard allows you to monitor your sales summary, top-selling products, inventory levels, user data, and expenses!",
-    githubLink: "https://github.com/Cosmodocus/inventory-management-app",
-    liveDemoLink: "https://main.d2ic9x6mmm9crb.amplifyapp.com",
-    skills: [
-      skills.nextjs,
-      skills.react,
-      skills.redux,
-      skills.typescript,
-      skills.tailwind,
-      skills.nodejs,
-      skills.postgresql,
-      skills.aws,
-    ],
-    newTag: true,
-  },
-  {
-    image: Pokedex,
-    title: "National Pokedex",
-    description:
-      "A national pokedex that contains detailed and information of over 1000 Pokemon in an easy-to-use interface",
-    githubLink: "https://github.com/Cosmodocus/national-pokedex",
-    liveDemoLink: "https://reztech-pokedex.netlify.app/",
-    skills: [skills.html, skills.css, skills.javascript],
-  },
+  // {
+  //   image: Inventory,
+  //   title: "Inventory Management Dashboard",
+  //   description:
+  //     "This full-stack inventory management dashboard allows you to monitor your sales summary, top-selling products, inventory levels, user data, and expenses!",
+  //   githubLink: "https://github.com/Cosmodocus/inventory-management-app",
+  //   liveDemoLink: "https://main.d2ic9x6mmm9crb.amplifyapp.com",
+  //   skills: [
+  //     skills.nextjs,
+  //     skills.react,
+  //     skills.redux,
+  //     skills.typescript,
+  //     skills.tailwind,
+  //     skills.nodejs,
+  //     skills.postgresql,
+  //     skills.aws,
+  //   ],
+  //   newTag: true,
+  // },
+  // {
+  //   image: Pokedex,
+  //   title: "National Pokedex",
+  //   description:
+  //     "A national pokedex that contains detailed and information of over 1000 Pokemon in an easy-to-use interface",
+  //   githubLink: "https://github.com/Cosmodocus/national-pokedex",
+  //   liveDemoLink: "https://reztech-pokedex.netlify.app/",
+  //   skills: [skills.html, skills.css, skills.javascript],
+  // },
 
   // {
   //   image: Sushi,

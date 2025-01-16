@@ -18,14 +18,10 @@ const About = () => {
                   About Me
                 </h1>
                 <p className="text-base lg:text-lg mb-4 text-custom-white rounded text-shadow text-left">
-                  I&apos;m a passionate frontend developer with expertise in building dynamic and responsive web applications.
-                  My journey in tech began with a fascination for creating seamless user experiences using{" "}
-                  <span className="font-bold">React</span> and{" "}
-                  <span className="font-bold">Next.js</span>.
+                  I&apos;m a fullstack developer that has had experience mentoring and leading teams of developers & developing full-stack web applications.
                 </p>
                 <p className="text-base lg:text-lg text-left text-custom-white text-shadow">
-                  With a solid background in collaborating on diverse projects, I thrive in fast-paced environments
-                  where I can leverage my skills in frontend technologies and contribute to impactful solutions.
+                  Currently I&apos;m a lead full-stack developer for an EdTech AI Agent Platform based company and a frontend developer for a B2B InsurTech Group Benefits Admin Portal.
                 </p>
               </div>
             </section>

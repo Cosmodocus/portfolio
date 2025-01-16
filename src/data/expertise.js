@@ -12,7 +12,7 @@ export const expertiseData = [
   {
     title: "Fullstack Developer",
     description:
-      "Capable of handling both frontend and backend development using JavaScript frameworks like React, Node.js, and Express. Strong in problem-solving and collaboration, delivering end-to-end solutions effectively.",
+      "Capable of handling both frontend and backend development with expertise in APIs, interfaces, and databases. Strong in problem-solving and collaboration, delivering end-to-end solutions effectively.",
     icon: expertise2,
   },
   {

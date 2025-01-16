@@ -93,7 +93,7 @@ const ProjectCard = ({project, cardVariants, index}) => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              Live Demo
+              Link to the Project
               <FaLocationArrow
                 size={20}
                 className="ml-2"
